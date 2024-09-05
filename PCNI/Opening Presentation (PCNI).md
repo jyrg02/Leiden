@@ -4,6 +4,7 @@ Politcs:
 - Cultural> Civil societies, memory, paris commune 
 - History is not only in the nation state, trans-national history.
 Research seminars: Normal seminars but related to the field. give you literature and primary sources. Write your own research paper with your own sources. 
+* Have consultation for how historians do research*
 Literature seminar: reads more main courses. A lot of reading. Historiography. 
 Research workshop: Methods course. Focus on primary sources. Links research and literature seminars together. 
 Academic skills and thesis seminar: Labour market. No content. Helps structure the thesis. 
@@ -19,7 +20,7 @@ Repository: https://studenttheses.universiteitleiden.nl
 + Browse through: Humantieis masters, history 
 START NOW: CONTACT FACULTY MEMBER 
 + No centralized list 
-# Professor 
+# Professors
 https://www.universiteitleiden.nl/en/humanities/institute-for-history/political-culture-and-national-identities/staff#tab-1 
 Hank:
 + Dutch history but can do other stuff

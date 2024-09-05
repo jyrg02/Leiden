@@ -1,0 +1,31 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "jpg",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [
+    {
+      "name": "Citation",
+      "format": "formatted-citation"
+    },
+    {
+      "name": "Bibliography",
+      "format": "formatted-bibliography",
+      "cslStyle": "norsk-apa-manual-note"
+    }
+  ],
+  "exportFormats": [
+    {
+      "name": "Reading",
+      "outputPathTemplate": "{{citekey}}.md",
+      "imageOutputPathTemplate": "{{citekey}}/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "Admin/Reading.md",
+      "cslStyle": "norsk-apa-manual"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": false,
+  "whichNotesToOpenAfterImport": "first-imported-note"
+}

@@ -3,7 +3,7 @@ ime taken to read:
 > Stefan Berger. ‘Comparative History’. In _Writing History: Theory and Practice_, edited by Stefan Berger, Heiko Feldner, and Kevin Passmore, 1st ed. Writing History. Hodder Arnold, 2003.
 
 > [!Synth]  
->**Contribution**::
+>**Contribution**:: Focuses mostly on comparative but does discusses cultural transfer
 
 >[!md]  Metadata
 ></br>  
@@ -36,6 +36,8 @@ Trace back to John Stuart Mil. There was a need to study societies different fro
 The rise of comparative studies coincides with two things 
 1. Globalization -  Directed historians to pay attention to interlinkages 
 2. The rise of nation states -  
+>[!important] 
+>Comparative historians construct homogenous identities and contrast them with another (p.171).
 # Types of Comparison (p. 162-163)
  >[!note] Unit of measurement: 
  >*note*: The broader the unit the more specific the aspect of comparison needs to be 
@@ -82,7 +84,27 @@ The rise of comparative studies coincides with two things
 >[!note] Author posits it as a challenge to comparative history
 >See more about cultural transfer in [[macdonaldTransnationalHistoryReview2013|MacDonald, 2013]]
 
----
+The main propontnets are Michael Werner and Michel Espagne regarding Franco-German studies. 
+Cultural Transfer historians advocate:
++ Cultures are dialectical and there is an argumentative nature to the process 
++ National identity is formed by a feeling of belonging, that belonging is created by othering. Appropriation and rejection therefore are the same coin. 
+They focus: 
+1. Groups suited for mediation (authors, publishers, migrants, etc.)
+2. Opportunities to travel 
+3. Borders
++ Demarcation - Sites of confrontation
++ Appropriation: Point of confluence 
+Methodology 
+ The other becomes embedded and requires archaeological capacity to bring the connections to light again. 
++ Transmitters need to be identified
++ Means of transmission needs to be identified. 
+>note: The History of a scholarship is considered appropriate because scholar communities during the 19th and 20th century underwent a process of internationalization. 
+# Tensions
+>[!TLDR]
+>The main debate lies on the unit of measurement. 
+
+Cultural transfer breaks down units to see how they interact with each other 
+Comparative form units to contrast it with another.
 
 # Notes
 Not all countries studies/benefit from comparative history. For example Britain has not really seen this but America has benefited greatly. 
