@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"8211c57477413627","type":"text","text":"Variation finding","x":-280,"y":-110,"width":250,"height":60},
+		{"id":"6d2467666f9a0170","type":"text","text":"Comparisons","x":40,"y":-110,"width":250,"height":60},
+		{"id":"9b5fb0902fafeb86","type":"text","text":"Encompassing","x":360,"y":-110,"width":250,"height":60},
+		{"id":"969f721a9d8a5f59","x":520,"y":60,"width":250,"height":60,"type":"text","text":"Historians"},
+		{"id":"cc880b507f935274","type":"text","text":"Universalizing","x":-620,"y":-110,"width":250,"height":60},
+		{"id":"2837353d997a85d4","type":"text","text":"Individualizing ","x":700,"y":-110,"width":250,"height":60},
+		{"id":"7100319a6719c6e6","x":-440,"y":60,"width":235,"height":60,"type":"text","text":"Historical sociologist + geographers"}
+	],
+	"edges":[
+		{"id":"3f8917a310898e97","fromNode":"6d2467666f9a0170","fromSide":"right","toNode":"9b5fb0902fafeb86","toSide":"left"},
+		{"id":"fe3bd380d2bbf56a","fromNode":"9b5fb0902fafeb86","fromSide":"right","toNode":"2837353d997a85d4","toSide":"left"},
+		{"id":"7ffbee1622ee871f","fromNode":"6d2467666f9a0170","fromSide":"left","toNode":"8211c57477413627","toSide":"right"},
+		{"id":"777ef8939ce39fb5","fromNode":"8211c57477413627","fromSide":"left","toNode":"cc880b507f935274","toSide":"right"},
+		{"id":"d631a834149713c7","fromNode":"9b5fb0902fafeb86","fromSide":"bottom","toNode":"969f721a9d8a5f59","toSide":"top"},
+		{"id":"4bd0fc02ee123ce9","fromNode":"2837353d997a85d4","fromSide":"bottom","toNode":"969f721a9d8a5f59","toSide":"top"},
+		{"id":"7920db63d1bcd381","fromNode":"cc880b507f935274","fromSide":"bottom","toNode":"7100319a6719c6e6","toSide":"top"},
+		{"id":"dd43bd6f64c8c220","fromNode":"8211c57477413627","fromSide":"bottom","toNode":"7100319a6719c6e6","toSide":"top"}
+	]
+}
