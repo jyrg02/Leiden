@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "To Discuss with Study Advisor.md",
+                "file": "vaughanCulture2011.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "To Discuss with Study Advisor.md",
+                "file": "vaughanCulture2011.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "To Discuss with Study Advisor.md",
+                "file": "vaughanCulture2011.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "To Discuss with Study Advisor.md"
+                "file": "vaughanCulture2011.md"
               }
             }
           }
@@ -220,30 +220,35 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "da2afe4c8ec90cde",
+  "active": "49da7df9cf269e2a",
   "lastOpenFiles": [
+    "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.pdf",
+    "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
+    "Media/PCNI - Types of Comparisons (Comparative History).png",
+    "Media/PCNI - Types of Comparisons (Comparative History).canvas",
+    "Media",
+    "Lecture notes.md",
+    "Comparing and Connecting/~$c_Duindam_comparing and Connecting 2024-25 final version .docx",
+    "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.pdf",
+    "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
+    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.pdf",
+    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.md",
+    "Comparing and Connecting/Readings/Week 1",
     "Comparing and Connecting/Assignments/~$Roig-s2764709-OpeningAssignment.docx",
-    "Comparing and Connecting/Assignments/~WRL0004.tmp",
-    "Comparing and Connecting/Assignments/~WRD0003.tmp",
     "Comparing and Connecting/Assignments/JYRoig-s2764709-OpeningAssignment.docx",
     "Comparing and Connecting/Assignments",
-    "Comparing and Connecting/New folder",
-    "Comparing and Connecting/~$c_Duindam_comparing and Connecting 2024-25 final version .docx",
-    "Comparing and Connecting/Readings/Week 1/~~$kockaComparativeHistoryMethodology2009.pdf",
-    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.pdf",
-    "To Discuss with Study Advisor.md",
-    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
-    "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
-    "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.pdf",
-    "PCNI/Opening Presentation (PCNI).md",
-    "Comparing and Connecting/Readings/Week 1",
-    "Comparing and Connecting/Readings/kockaComparativeHistoryMethodology2009.md",
-    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.md",
+    "Admin/Academics.md",
+    "Comparing and Connecting/Readings/BlochMarc2022ACTa.md",
+    "Comparing and Connecting/Readings/BlochMarc2022ACTa.pdf",
     "vaughanCulture2011.md",
+    "Comparing and Connecting/Readings",
     "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
     "Admin/Thesis Planning.md",
+    "To Discuss with Study Advisor.md",
     "Admin/Work Diary.md",
     "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
+    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
+    "PCNI/Opening Presentation (PCNI).md",
     "Admin/Reading.md",
     "Admin/To do.md"
   ]
