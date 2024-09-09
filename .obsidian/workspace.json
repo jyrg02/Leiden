@@ -107,9 +107,11 @@
             "id": "19abdbb8a193b610",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf"
+                "file": "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -180,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf",
+                "file": "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf",
+                "file": "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -220,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf"
+                "file": "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md"
               }
             }
           }
@@ -244,36 +246,36 @@
   },
   "active": "19abdbb8a193b610",
   "lastOpenFiles": [
-    "Comparing and Connecting/Readings/Week 1/~~$hobsbawmPoliticalShoemakers1980.pdf",
-    "PCNI/Readings/Week 2/~~$stormNewDawnNationalism2018.pdf",
-    "Comparing and Connecting/Assignments/~WRD3537.tmp",
-    "PCNI/Readings/Week 2/~~$steinmetzPoliticalCommunicativeSpace2013.pdf",
-    "PCNI/Readings/Week 2/vaughanCulture2011.pdf",
-    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf",
+    "Comparing and Connecting/Assignments/The Kipper und Wipper Inflation, 1619-23 (Richard D. Alba) (Z-Library).pdf",
+    "Comparing and Connecting/Assignments/The Kipper und Wipper Inflation, 1619-23 (Richard D. Alba) (Z-Library).pdf.opdownload",
+    "Comparing and Connecting/Assignments/~WRL3517.tmp",
+    "Comparing and Connecting/Assignments/~WRD3505.tmp",
+    "Comparing and Connecting/Assignments/~WRL1662.tmp",
+    "Comparing and Connecting/Assignments/~WRD1650.tmp",
+    "Comparing and Connecting/Assignments/~WRL0865.tmp",
+    "Comparing and Connecting/Assignments/~WRD0853.tmp",
+    "Comparing and Connecting/Assignments/~WRL3077.tmp",
+    "Comparing and Connecting/Assignments/~WRD3062.tmp",
+    "Comparing and Connecting/Assignments/~WRL2701.tmp",
+    "Media/PCNI - Types of Comparisons (Comparative History).canvas",
+    "hobsbawmPoliticalShoemakers1980.md",
+    "PCNI/Opening Presentation (PCNI).md",
     "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
-    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.pdf",
     "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
     "Comparing and Connecting/Assignments/spivakGeneralStrike2014.md",
-    "Comparing and Connecting/Assignments/~$mparison.docx",
-    "Comparing and Connecting/Assignments/~WRL4018.tmp",
-    "Comparing and Connecting/Assignments/~WRD4014.tmp",
-    "Comparing and Connecting/Assignments/Comparison.docx",
     "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
     "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.md",
     "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
     "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
     "To Discuss with Study Advisor.md",
-    "hobsbawmPoliticalShoemakers1980.md",
     "vaughanCulture2011.md",
     "Media/PCNI - Types of Comparisons (Comparative History).png",
-    "Media/PCNI - Types of Comparisons (Comparative History).canvas",
     "Lecture notes.md",
     "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
     "Admin/Academics.md",
     "Comparing and Connecting/Readings/BlochMarc2022ACTa.md",
     "Admin/Thesis Planning.md",
     "Admin/Work Diary.md",
-    "PCNI/Opening Presentation (PCNI).md",
     "Admin/Reading.md",
     "Admin/To do.md"
   ]
