@@ -1,4 +1,4 @@
-ime taken to read: 
+	 Blime taken to read: 
 > [!Cite]  
 > Stefan Berger. ‘Comparative History’. In _Writing History: Theory and Practice_, edited by Stefan Berger, Heiko Feldner, and Kevin Passmore, 1st ed. Writing History. Hodder Arnold, 2003.
 

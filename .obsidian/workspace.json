@@ -90,9 +90,31 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8a59e140070976c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "hobsbawmPoliticalShoemakers1980.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "19abdbb8a193b610",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf"
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -158,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vaughanCulture2011.md",
+                "file": "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +197,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vaughanCulture2011.md",
+                "file": "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +220,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vaughanCulture2011.md"
+                "file": "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf"
               }
             }
           }
@@ -220,34 +242,37 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "49da7df9cf269e2a",
+  "active": "19abdbb8a193b610",
   "lastOpenFiles": [
-    "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.pdf",
+    "Comparing and Connecting/Readings/Week 1/~~$hobsbawmPoliticalShoemakers1980.pdf",
+    "PCNI/Readings/Week 2/~~$stormNewDawnNationalism2018.pdf",
+    "Comparing and Connecting/Assignments/~WRD3537.tmp",
+    "PCNI/Readings/Week 2/~~$steinmetzPoliticalCommunicativeSpace2013.pdf",
+    "PCNI/Readings/Week 2/vaughanCulture2011.pdf",
+    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf",
+    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
+    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.pdf",
+    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
+    "Comparing and Connecting/Assignments/spivakGeneralStrike2014.md",
+    "Comparing and Connecting/Assignments/~$mparison.docx",
+    "Comparing and Connecting/Assignments/~WRL4018.tmp",
+    "Comparing and Connecting/Assignments/~WRD4014.tmp",
+    "Comparing and Connecting/Assignments/Comparison.docx",
+    "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
+    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.md",
+    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
     "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
+    "To Discuss with Study Advisor.md",
+    "hobsbawmPoliticalShoemakers1980.md",
+    "vaughanCulture2011.md",
     "Media/PCNI - Types of Comparisons (Comparative History).png",
     "Media/PCNI - Types of Comparisons (Comparative History).canvas",
-    "Media",
     "Lecture notes.md",
-    "Comparing and Connecting/~$c_Duindam_comparing and Connecting 2024-25 final version .docx",
-    "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.pdf",
     "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
-    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.pdf",
-    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.md",
-    "Comparing and Connecting/Readings/Week 1",
-    "Comparing and Connecting/Assignments/~$Roig-s2764709-OpeningAssignment.docx",
-    "Comparing and Connecting/Assignments/JYRoig-s2764709-OpeningAssignment.docx",
-    "Comparing and Connecting/Assignments",
     "Admin/Academics.md",
     "Comparing and Connecting/Readings/BlochMarc2022ACTa.md",
-    "Comparing and Connecting/Readings/BlochMarc2022ACTa.pdf",
-    "vaughanCulture2011.md",
-    "Comparing and Connecting/Readings",
-    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
     "Admin/Thesis Planning.md",
-    "To Discuss with Study Advisor.md",
     "Admin/Work Diary.md",
-    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
-    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
     "PCNI/Opening Presentation (PCNI).md",
     "Admin/Reading.md",
     "Admin/To do.md"

@@ -10,4 +10,4 @@
 	* I would like if possible to talk to them about meeting every two weeks simply bc it keeps me accountable and gives me an external motivator which helps me stay on track. 
 5. Research Assistant jobs
 6. Is there a citation standard? 
-7. 
+7. Honours programme? 
