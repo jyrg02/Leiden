@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PCNI/Opening Presentation (PCNI).md",
+                "file": "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
                 "mode": "source",
                 "source": false
               }
@@ -151,43 +151,6 @@
               }
             }
           }
-        ],
-        "currentTab": 11
-      },
-      {
-        "id": "12ece5b94268b9d0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ab97a3064483bc15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "900c65c9e7eb469f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "bc7941208b887b5e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PCNI/Readings/Week 1/Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
         ]
       }
     ],
@@ -254,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PCNI/Readings/Week 1/Untitled.md",
+                "file": "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -271,7 +234,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PCNI/Readings/Week 1/Untitled.md",
+                "file": "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -294,7 +257,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PCNI/Readings/Week 1/Untitled.md"
+                "file": "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md"
               }
             }
           }
@@ -316,37 +279,38 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bc7941208b887b5e",
+  "active": "49da7df9cf269e2a",
   "lastOpenFiles": [
+    "PCNI/Readings/Week 3/The Gun, the Ship, and the Pen - Linda Colley.pdf",
+    "PCNI/Readings/Week 3",
+    "PCNI/Readings/New folder",
+    "PCNI/~WRL0003.tmp",
+    "PCNI/~WRD0002.tmp",
+    "PCNI/~WRL0001.tmp",
+    "PCNI/~WRD0000.tmp",
+    "PCNI/~$urse Scheme Lit Sem PCNI Storm 2024-25.docx",
+    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.pdf",
+    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.md",
+    "Comparing and Connecting/Readings/Week 1/hobsbawmPoliticalShoemakers1980.pdf",
+    "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.pdf",
+    "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
+    "Media/PCNI - Types of Comparisons (Comparative History).canvas",
+    "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
+    "Comparing and Connecting/Assignments/spivakGeneralStrike2014.md",
+    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
+    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
+    "PCNI/Readings/Week 1/Untitled.md",
+    "PCNI/Opening Presentation (PCNI).md",
     "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
     "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
-    "PCNI/Readings/Week 1/Untitled.md",
     "[stefanbergerComparativeHistory2003.md",
     "PCNI/Seminar 1 (PCNI).md",
-    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.pdf",
-    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
     "Academic Skills and Thesis/10-09-2024 Seminar.md",
-    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
-    "PCNI/Readings/Week 2/~~$stormNewDawnNationalism2018.pdf",
-    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf",
     "hobsbawmPoliticalShoemakers1980.md",
-    "Academic Skills and Thesis",
-    "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
-    "Comparing and Connecting/Assignments/The Kipper und Wipper Inflation, 1619-23 (Richard D. Alba) (Z-Library).pdf",
-    "Comparing and Connecting/Assignments/The Kipper und Wipper Inflation, 1619-23 (Richard D. Alba) (Z-Library).pdf.opdownload",
-    "Comparing and Connecting/Assignments/~WRL3517.tmp",
-    "Comparing and Connecting/Assignments/~WRD3505.tmp",
-    "Comparing and Connecting/Assignments/~WRL1662.tmp",
-    "Comparing and Connecting/Assignments/~WRD1650.tmp",
-    "Media/PCNI - Types of Comparisons (Comparative History).canvas",
-    "PCNI/Opening Presentation (PCNI).md",
-    "Comparing and Connecting/Assignments/spivakGeneralStrike2014.md",
-    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.md",
     "To Discuss with Study Advisor.md",
     "vaughanCulture2011.md",
     "Media/PCNI - Types of Comparisons (Comparative History).png",
     "Lecture notes.md",
-    "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
     "Admin/Academics.md",
     "Comparing and Connecting/Readings/BlochMarc2022ACTa.md",
     "Admin/Thesis Planning.md",
