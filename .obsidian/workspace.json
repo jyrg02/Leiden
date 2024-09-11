@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
+                "file": "Comparing and Connecting/Readings/Week 1/Seminar.md",
                 "mode": "source",
                 "source": false
               }
@@ -217,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
+                "file": "Comparing and Connecting/Readings/Week 1/Seminar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -234,7 +234,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
+                "file": "Comparing and Connecting/Readings/Week 1/Seminar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -257,7 +257,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md"
+                "file": "Comparing and Connecting/Readings/Week 1/Seminar.md"
               }
             }
           }
@@ -279,27 +279,30 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "49da7df9cf269e2a",
+  "active": "e34f2a3e4b91696d",
   "lastOpenFiles": [
-    "PCNI/Readings/Week 3/The Gun, the Ship, and the Pen - Linda Colley.pdf",
-    "PCNI/Readings/Week 3",
-    "PCNI/Readings/New folder",
-    "PCNI/~WRL0003.tmp",
-    "PCNI/~WRD0002.tmp",
-    "PCNI/~WRL0001.tmp",
-    "PCNI/~WRD0000.tmp",
+    "PCNI/~WRL3046.tmp",
+    "PCNI/~WRD3014.tmp",
     "PCNI/~$urse Scheme Lit Sem PCNI Storm 2024-25.docx",
-    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.pdf",
-    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.md",
-    "Comparing and Connecting/Readings/Week 1/hobsbawmPoliticalShoemakers1980.pdf",
-    "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.pdf",
+    "Thesis/OpeningLetter - Cramsay.pdf",
+    "Thesis/msoD36B.tmp",
+    "Thesis/~WRL0003.tmp",
+    "Thesis/~WRD0002.tmp",
+    "Thesis/~$eningLetter - Cramsay.docx",
+    "Thesis/~WRL0001.tmp",
+    "Thesis/~WRD0000.tmp",
+    "Thesis/OpeningLetter - Cramsay.docx",
+    "Comparing and Connecting/Readings/Week 1/Untitled.md",
+    "Comparing and Connecting/Readings/Week 1/Seminar.md",
     "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
-    "Media/PCNI - Types of Comparisons (Comparative History).canvas",
-    "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
-    "Comparing and Connecting/Assignments/spivakGeneralStrike2014.md",
-    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
-    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
     "PCNI/Readings/Week 1/Untitled.md",
+    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
+    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
+    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.md",
+    "Comparing and Connecting/Assignments/seminar.md",
+    "Comparing and Connecting/Assignments/spivakGeneralStrike2014.md",
+    "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
+    "Media/PCNI - Types of Comparisons (Comparative History).canvas",
     "PCNI/Opening Presentation (PCNI).md",
     "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
     "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
@@ -315,7 +318,6 @@
     "Comparing and Connecting/Readings/BlochMarc2022ACTa.md",
     "Admin/Thesis Planning.md",
     "Admin/Work Diary.md",
-    "Admin/Reading.md",
-    "Admin/To do.md"
+    "Admin/Reading.md"
   ]
 }

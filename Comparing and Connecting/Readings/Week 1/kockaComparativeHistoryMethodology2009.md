@@ -30,4 +30,5 @@ Time taken to read:
 >  
 > Abstract
               While it is necessary to distinguish between analytical and normative statements, the quest for this distinction – and for value-free science – is itself normatively based. Comparative approaches can serve important descriptive and analytical functions. They reduce the danger of methodological nationalism and intellectual parochialism in historical studies. The comparative approach allows to find an acceptable middle ground between the acceptance of basic differences and universalist claims. Method and ethos interact. But a-symmetric comparison shows that scientific productivity and political incorrectness can go together. For this, Max Weber's comparative approach can serve as an example.  
->>  
+
+

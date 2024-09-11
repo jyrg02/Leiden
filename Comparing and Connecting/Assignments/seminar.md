@@ -1,0 +1,1 @@
+Bloch - Classic. Origins of comparative history bloch 1992/2022. Worked in BG of the annales. He and a few others are interested in structural history. Mentions ethnographers and linguistics. 
