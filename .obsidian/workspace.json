@@ -109,14 +109,86 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
+                "file": "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "38d0b06f31ab9294",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Academic Skills and Thesis/10-09-2024 Seminar.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d090fd3408c37956",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "44079c58ed789389",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 11
+      },
+      {
+        "id": "12ece5b94268b9d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab97a3064483bc15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "900c65c9e7eb469f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc7941208b887b5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PCNI/Readings/Week 1/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,7 +254,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
+                "file": "PCNI/Readings/Week 1/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +271,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
+                "file": "PCNI/Readings/Week 1/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +294,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md"
+                "file": "PCNI/Readings/Week 1/Untitled.md"
               }
             }
           }
@@ -244,29 +316,32 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "19abdbb8a193b610",
+  "active": "bc7941208b887b5e",
   "lastOpenFiles": [
+    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
+    "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
+    "PCNI/Readings/Week 1/Untitled.md",
+    "[stefanbergerComparativeHistory2003.md",
+    "PCNI/Seminar 1 (PCNI).md",
+    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.pdf",
+    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
+    "Academic Skills and Thesis/10-09-2024 Seminar.md",
+    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
+    "PCNI/Readings/Week 2/~~$stormNewDawnNationalism2018.pdf",
+    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf",
+    "hobsbawmPoliticalShoemakers1980.md",
+    "Academic Skills and Thesis",
+    "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
     "Comparing and Connecting/Assignments/The Kipper und Wipper Inflation, 1619-23 (Richard D. Alba) (Z-Library).pdf",
     "Comparing and Connecting/Assignments/The Kipper und Wipper Inflation, 1619-23 (Richard D. Alba) (Z-Library).pdf.opdownload",
     "Comparing and Connecting/Assignments/~WRL3517.tmp",
     "Comparing and Connecting/Assignments/~WRD3505.tmp",
     "Comparing and Connecting/Assignments/~WRL1662.tmp",
     "Comparing and Connecting/Assignments/~WRD1650.tmp",
-    "Comparing and Connecting/Assignments/~WRL0865.tmp",
-    "Comparing and Connecting/Assignments/~WRD0853.tmp",
-    "Comparing and Connecting/Assignments/~WRL3077.tmp",
-    "Comparing and Connecting/Assignments/~WRD3062.tmp",
-    "Comparing and Connecting/Assignments/~WRL2701.tmp",
     "Media/PCNI - Types of Comparisons (Comparative History).canvas",
-    "hobsbawmPoliticalShoemakers1980.md",
     "PCNI/Opening Presentation (PCNI).md",
-    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
-    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
     "Comparing and Connecting/Assignments/spivakGeneralStrike2014.md",
-    "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
     "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.md",
-    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
-    "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
     "To Discuss with Study Advisor.md",
     "vaughanCulture2011.md",
     "Media/PCNI - Types of Comparisons (Comparative History).png",

@@ -47,13 +47,15 @@ The rise of comparative studies coincides with two things
 
 >[!note] Purpose/Objective
 >![[PCNI - Types of Comparisons (Comparative History).png]]
-* Individualizing: Demonstrate the uniqueness of one particular case when compared to others (*ej: american exceptionalism*)
+* Individualizing: Demonstrate the uniqueness of one particular case when compared to others (*ej: american exceptionalism*) --> Case studies
 	* Asymmetrical: Use a lot of cases to reveal more about the unit of study 
-* Universalizing: Identify similarities between cases 
+> Is a case study of one nation and ever so often there is a remark Gives international context to the event --> Seminar
+* Universalizing: Identify similarities between cases --> Case studies 
 	* Symmetrical: Give weight to all of the cases compared. 
-* Encompassing comparisons: Explaining differences between cases that share general commonalities (*ej: nationalism studies*)
-* Variation-finding: Different cases are understood as one variation of a particular phenomena. (*ej: comparative fascism*)
-* Synchronic comparisons: Concerned with a particular event and ignoring historical antecedents (p. 167)
+>Tends to have 2 to 5 cases which are systematically compared either by country or by themes --> Seminar 
+* Encompassing comparisons: Explaining differences between cases that share general commonalities (*ej: nationalism studies*)--> Not as useful according to Storm
+* Variation-finding: Different cases are understood as one variation of a particular phenomena. (*ej: comparative fascism*) 
+* Synchronic comparisons: Concerned with a particular event and ignoring historical antecedents (p. 167) --> Not as useful according to Storm
 * Diachronic comparisons: Concerned with changes of concepts over a period of time. "Different times for different social contexts" (p. 167)
 >[!note] Intentions 
 * Detachment from object of study 

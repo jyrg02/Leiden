@@ -37,11 +37,16 @@ Time taken to read:
 >Sven Beckert: Evolving approach taking as its starting point the interconnectedness of human history as a whole 
 
 Main agreements: 
-* Concern with cross-border flows 
+* Concern with cross-border flows -->Seminar: connected with Global history
+	* People --> Seminar
+	* Ideas  --> Seminar
+	* Goods --> Seminar
+	* Unlike global history transnational history does not necessarily include colonial interactions. 
 * Nation: Encompassing the political unit not just the nation-state 
 * Analysis on how people are the result of processes of exchange and circulation 
 Origin
 * Outside of history field, from other disciplines 
+* Not restrict themselves to single case study 
 Criticisms: 
 * Some approaches are excessive lose and catch all. This accounts for the widespread use of the term
 	* Can be an advantage to encourage pluralism. \
