@@ -3,7 +3,7 @@ Time taken to read:
 > Storm, E. (2018). A New Dawn in Nationalism Studies? Some Fresh Incentives to Overcome Historiographical Nationalism. _European History Quarterly_, _48_(1), 113–129. [https://doi.org/10.1177/0265691417741830](https://doi.org/10.1177/0265691417741830)
 
 > [!Synth]  
->**Contribution**::
+>**Contribution**:: FINISHED 
 
 >[!md]  Metadata
 > **Author**:: Storm, Eric</br>  
@@ -45,16 +45,16 @@ A lot of research has been published, focus on national context makes it hard to
 	* National identities are found before the late 18th century. 
 	* Continuity between national and older ethnic identities. [^2]
 * Political Scientists
-		* People are tribalistic and the refore political ethnicity goes way back.[^3]
-		* Critique of Anderson: Imagined communities can also be via spoken word, not just because of decline or religion and rise of print 
-		* Gellner and Modernists: Focus on successful nation state as typical multi-national empires without dominant ethnic groups, like India and Habsburg. ==however this view ignores Spain==. 
+	* People are tribalistic and the therefore political ethnicity goes way back.[^3]
+	* Critique of Anderson: Imagined communities can also be via spoken word, not just because of decline or religion and rise of print 
+	* Gellner and Modernists: Focus on successful nation state as typical multi-national empires without dominant ethnic groups, like India and Habsburg. ==however this view ignores Spain==. 
 	* This view is critiqued for over-emphasizing collective defence and linking it with nationalism
 * Sociology 
-	* Wimmer model: Nation states as a result of political modernization, product of modernity. Statet centralization is what allows nation-states to have success. Three outcomes 
+	* Wimmer model: Nation states as a result of political modernization, product of modernity. State centralization is what allows nation-states to have success. Three outcomes 
 		1. Nation states were the state suceeds in integrating the entire population 
 		2. Populist nationalism where a dominant group along with the masses against a subordinate elite
 		3. Ethnic enclosure: Each dominant and subordinate elites ally with their own groups
-		*  The rise of nation states is attributed to the success of new nation-states. 
+		* The rise of nation states is attributed to the success of new nation-states. 
 		* Wars are more likely to occur during and after the transition to the nation-state model. 
 # Nationalism in Every day life (Banal Nationalism)
 * Social Scientists --> Mundane. Focus on recent periods.[^7] Asso ciated with post Second World War nation-states however some have contradicted this.[^8]  
@@ -64,7 +64,7 @@ A lot of research has been published, focus on national context makes it hard to
 	* Trivial forms of nationalism have played a role since the 18th century. [^8]
 	* Unintended nationalizing due to modernization or symbopls/practices are hard to study due to primary sources and their societal acceptance (are they representative enough)
 		* Study of novels, dress, world fairs, champagne and Michelin (FR)
-# Nationalism and its impact on methodlogy 
+# Nationalism and its impact on methodology 
 >[!note] The Nation-State model
 >Borders of states overlap with nations. National culture is more dominant within the state but does not overlap with other nations (it stops at a nations borders). Residents should be citizens and participate in national culture (a uniform type of culture). [^14]
 * Social sciences takes nation-states are granted[^9] 
