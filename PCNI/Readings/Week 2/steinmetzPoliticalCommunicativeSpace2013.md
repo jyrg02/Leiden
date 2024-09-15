@@ -86,7 +86,6 @@ Political history comes under attack during the 1970's
 * Germany: 
 	* Cultural History of politics (Kulturgeschichte der Politik)
 		* Use of metaphors and images to reinterpret political life in Weimar Republic
-	* Bielefeld school: Lyrics and rituals during coronations were essential for upholding political power. 
 >[!note] Schools of Thought 
 >German Research Foundation
 >Bielefeld group (»The Political as Communicative Space in History«).[^10]

@@ -1,0 +1,18 @@
+>See docx for edited text and final text 
+
+**Assignment 1**: Relevance of History for society and ethics for historians. Read the following texts for class. All students hand in an individual text on moral dilemmas of the historian (500 words). 
+
+---
+
+History has interacted with politics, especially when constructing text books.[^1] However now a days the interaction has become ever more stark, in particular under the Trump presidency the field of history has become a battleground. This is exemplified by the 1766 project that Trump championed. A response to the 1619 project, the 1766 project aimed to provide a "patriotic education".[^2] The project was derided by historians however the publishing and endorsement of the 1766 project demonstrates the politization of history.[^3] While the 1766 project was not written by historians, historians immediately came out and denounced it. This denunciation demonstrates a common attitude among the field, there is a social responsibility to combat misinformation. Misinformation from the government is one aspect of the equation however there is also the subject of misinformation in the public. The example of Charlottesville is one of the most blatant however less blatant examples abound. A more innocuous example would be the current discourse around traditional gender roles, with republicans harkening to a perceived past where women were subservient and projecting this idea into the far past. However historical findings indicate that traditional gender roles regarding family are a relatively new phenomena, as seen with the brewing profession [^4] and farming.[^5] The next issue which is related closely with lying is the issue of Holocaust denial.[^1] This is currently a task that is more relevant than ever. The current debate with the AfD in Germany posits an interesting dilemma and a possible failure on the part of historians. A failure to properly communicate with both the politicians and public. 
+However this is a task with many fronts. While historians combat misinformation from the politicians and the public, it is important they do not shut themselves away in the ivory tower of academia. Public history is still very much important and people are interested more than ever, the rise of re-enactment and living museums bear witness to this trend.[^1] This especially overlaps with museums, historians must constantly adapt to the new methods of communication. History, in the age of digital communication, is at a turning point. The rapid dissemination of information is a two sided edge. While misinformation is communicated with more speed, information has never been easier to access. Youtube, Tiktok and Instagram are platforms ideal for information exchange. It is important to take into account that both TikTok and Instagram communicate bite-sized information, therefore perhaps the objective should be to spark curiosity and not outright provide information. 
+Finally among academics there is also a responsibility to engage in falsification as exemplified by the Abraham affair.[^6] Methodologies and theories are always evolving, it is the task of both academic historians and public historians to engage with the new discoveries in the field lest they find themselves repeating the mistakes of their predecessors. 
+
+# Footnotes
+
+[^1]: (Hunt 2018)
+[^2]: (Trump 2020)
+[^3]: (Crowley and Schuessler 2021)
+[^4]: (Dietler 2006, 236)
+[^5]: (Bennett 1987, 116)
+[^6]: (Novick 1988)
