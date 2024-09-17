@@ -1,4 +1,5 @@
 {
   "ITS@@accent-color": false,
-  "ITS@@slrvb-b": true
+  "ITS@@slrvb-b": true,
+  "ITS@@default-font": "'Fira Code Medium'"
 }
