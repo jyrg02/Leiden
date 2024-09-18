@@ -56,7 +56,8 @@ A lot of research has been published, focus on national context makes it hard to
 		3. Ethnic enclosure: Each dominant and subordinate elites ally with their own groups
 		* The rise of nation states is attributed to the success of new nation-states. 
 		* Wars are more likely to occur during and after the transition to the nation-state model. 
-# Nationalism in Every day life (Banal Nationalism)
+# Nationalism in Every day life (Banal Nationalism)[^6].
+>[!IMPORTANT] Will not be part of the readings 
 * Social Scientists --> Mundane. Focus on recent periods.[^7] Asso ciated with post Second World War nation-states however some have contradicted this.[^8]  
 	* Nationalism is banal in everyday experiences.[^6]
 		* Hot and Cold nationalism 

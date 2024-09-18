@@ -67,10 +67,10 @@ Political history comes under attack during the 1970's
 > 
 * Britain
 	* Linguistics: Discursive practices in self-definition regarding groups, ideas, activities and opponents 
-		* Competing conceptions of class.[^7]
+		* Competing conceptions of class.[^7] --> Cultural 
 		* 1990s onwards - Demarcations between the political and the social
 * Mainland Europe
-	* Germany - Conceptual history - Reinhart Kosolleck 
+	* Germany - Conceptual history (Begriffsgeschichte) - Reinhart Kosolleck 
 		* Politics and political are categories and each have their own history 
 	* Finnish
 		* Comparative studies - Contingent emergence of the concept of political itself.[^8]
@@ -93,7 +93,7 @@ Political history comes under attack during the 1970's
 Their focus: The political is a communicative sphere that is subject to change and varies through time and space. It is to historicise the mere concept of political and the things that surround it (p. 21). ==Explore the boundaries between political and non political and processes that make up these two== (p. 27)
 Spheres are not presupposed and their emergence is examined, their delineation and boundaries as well and the presumed separation. 
 *For further examples of works that examine this see ([[steinmetzPoliticalCommunicativeSpace2013|Steinmetz 2013]], 22 and 23)*
-Main concerns (p/ 23)
+Main concerns (p. 23)
 * Dynamics of politicisation and depoliticization 
 * Spatial analysis.[^11]
 * Communication. [^12]
@@ -108,6 +108,7 @@ Some conclusions from their work on ==how politicisation occurs== (p.25)
 * Politicisation through this method does not always work
 * Depoliticization here moves removing statues, symbols, etc
 3. Attempted depoliticization and effective depoliticization
+* Easy to study politization towards the bureaucracy/technocracy 
 
 
 # Footnotes
