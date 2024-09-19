@@ -40,7 +40,8 @@ Lieberman --> presents ==neo-cyclical== theory
 	* Heartland and rimland go along the traditional lines of the really big players of early modern history 
 	* Are the generalizations equal in all of the areas analysed
 	* Based on conventional wisdom and has selection bias, the scholars chosen will be the ones that fit into the narrative. 
-The early modern period: Middle 14th cent to mid 18th cent
+The early modern period: Middle 14th cent to mid 18th cent. 
+> This is not the standard. Usually 100 to 1500 is late middle ages and 1500 onwards is modernity. This is probably due to conversation during a conference with their paper. 
 * Political definition: Reformulation of Eurasian politics as a result of Amir Timur Gurgan (1405)  
 	* Delink from any particular country of origin --> General shift 
 	* Features:

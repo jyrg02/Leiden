@@ -21,7 +21,7 @@ Transfers
 Nationalism 
 * Modernist
 * Anti modernist 
-* constructivismç
+* constructivism
 * Nations as ethnic gorups or as bodies of people that live in the same area
 
 
