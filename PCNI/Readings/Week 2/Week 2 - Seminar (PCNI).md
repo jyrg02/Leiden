@@ -9,7 +9,7 @@
 
 
 # To discuss in book summaries 
-Politics
+==Politics==
 - What kind of conception do our authors use? High politics, low politics, cultural? 
 - Do they discuss politization 
 Culture
@@ -18,7 +18,7 @@ Culture
 * Do they think certain civilizations are better than other
 * If there is cultural aspects analyzed do they look at high, low or anthropological sense of culture. 
 Transfers
-Nationalism 
+==Nationalism==
 * Modernist
 * Anti modernist 
 * constructivism

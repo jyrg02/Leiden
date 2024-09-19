@@ -15,4 +15,3 @@
 - [ ] Do presentation for PCNI 
 - [ ] Do the readings for Comparing 
 - [ ] Do the proposal for comparing (22-09-2024 Final date)
-- [ ] 
