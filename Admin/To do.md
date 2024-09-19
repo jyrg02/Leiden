@@ -9,4 +9,10 @@
 # Immediate tasks
 ## 17th of Sept
 - [ ] Upload comments to the Comparing forum
-
+# 16-18th Week 
+- [ ] Pay attention to your email for thesis supervisor 
+- [ ] Email to the study councilor 
+- [ ] Do presentation for PCNI 
+- [ ] Do the readings for Comparing 
+- [ ] Do the proposal for comparing (22-09-2024 Final date)
+- [ ] 

@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "1180004fd2e6e9c3",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "88570b1b4731c479",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "ab961aa5b5226f9e",
         "type": "tabs",
         "children": [
@@ -31,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PCNI/Readings/Week 2/Week 2 - Seminar (PCNI).md",
+                "file": "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/Seminar - 6 week course apparently lmao.md",
                 "mode": "source",
                 "source": false
               }
@@ -87,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a18a247e4c152f91",
@@ -104,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PCNI/Readings/Week 2/Week 2 - Seminar (PCNI).md",
+                "file": "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/Seminar - 6 week course apparently lmao.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PCNI/Readings/Week 2/Week 2 - Seminar (PCNI).md",
+                "file": "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/Seminar - 6 week course apparently lmao.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PCNI/Readings/Week 2/Week 2 - Seminar (PCNI).md"
+                "file": "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/Seminar - 6 week course apparently lmao.md"
               }
             }
           }
@@ -169,41 +150,45 @@
   },
   "active": "fa961c30fe4592fd",
   "lastOpenFiles": [
-    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
+    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/subrahmanyamConnectedHistoriesNotes1997.md",
+    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/Seminar - 6 week course apparently lmao.md",
+    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/subrahmanyamConnectedHistoriesNotes1997.pdf",
+    "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
+    "Thesis/casteelHistoricizingNationTransnational2011.md",
     "PCNI/Readings/Week 2/Week 2 - Seminar (PCNI).md",
-    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf",
     "PCNI/Readings/Week 2/vaughanCulture2011.pdf",
-    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.pdf",
-    "PCNI/Assignments/Feedback - Week 2 - JYRoig-2487381.pdf",
-    "Comparing and Connecting/Assignments/Feedback - Week 2 - JYRoig-2487381.pdf",
-    "Academic Skills and Thesis/MA skills and thesis seminar 2024-2025 PARGAS.pdf",
-    "PCNI/Readings/Week 1/Week 1 - Seminar (PCNI).md",
     "PCNI/Readings/Week 2/Assignment 2.md",
     "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
-    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/subrahmanyamConnectedHistoriesNotes1997.md",
-    "Comparing and Connecting/Assignments/~WRL0462.tmp",
-    "Comparing and Connecting/Assignments/~WRD0458.tmp",
-    "Comparing and Connecting/Assignments/~WRL1200.tmp",
-    "Comparing and Connecting/Assignments/~WRD1197.tmp",
-    "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
-    "Admin/Work Diary.md",
     "Admin/To do.md",
+    "Admin/Untitled.md",
+    "Thesis/feindtEntangledMemoryThird2014.md",
+    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/EMERGENCY NOTES LMAO wernerComparisonHistoireCroisee2006 1.md",
+    "Thesis/jones2017cross.md",
+    "Thesis/To Read/feindtEntangledMemoryThird2014.pdf",
+    "Thesis/To Read",
+    "Thesis/New folder",
+    "Thesis/To read (THESIS).md",
+    "Comparing and Connecting/Readings/Week 1/Seminar 1(Comparing).md",
+    "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
+    "Comparing and Connecting/Readings/Week 1/hobsbawmPoliticalShoemakers1980.pdf",
+    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.pdf",
+    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/~~$wernerComparisonHistoireCroisee2006.pdf",
+    "Comparing and Connecting/Assignments/~$ek 2 Commentary - JYRoig .docx",
+    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/wernerComparisonHistoireCroisee2006.md",
+    "To Discuss with Study Advisor.md",
+    "Admin/Work Diary.md",
+    "Media/Pasted image 20240918122612.png",
+    "Media/Pasted image 20240918122517.png",
+    "Media/Pasted image 20240918122626.png",
+    "Media/Pasted image 20240918122533.png",
+    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
+    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.pdf",
+    "PCNI/Readings/Week 1/Week 1 - Seminar (PCNI).md",
     "Admin/Reading.md",
     "Admin/Thesis Planning.md",
     "Admin/Academics.md",
     "PCNI/Readings/Week 3/colleyGunShipPen2021.md",
     "Academic Skills and Thesis/Draft - Assignment 1 (Academic skills).md",
-    "Thesis/Prep for meeting.md",
-    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
-    "Academic Skills and Thesis/10-09-2024 Seminar.md",
-    "vaughanCulture2011.md",
-    "PCNI/Opening Presentation (PCNI).md",
-    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/wernerComparisonHistoireCroisee2006.md",
-    "Comparing and Connecting/Readings/Untitled.md",
-    "PCNI/Readings/Week 2/Assignment 2 (PCNI)  - Draft.md",
-    "PCNI/Readings/Week 2/Assignment 2 1.md",
-    "Lecture notes.md",
-    "hobsbawmPoliticalShoemakers1980.md",
     "Media/PCNI - Types of Comparisons (Comparative History).canvas",
     "Media/PCNI - Types of Comparisons (Comparative History).png"
   ]
