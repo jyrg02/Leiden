@@ -67,9 +67,9 @@ Historians began to use the term as a response to the work of Akira Iraye's call
 Comparative history studies supranational or subnational aspects of a phenomena. 
 Notable concepts:
 1. World History: Historical configuration that are world scale
-2. Global Historry: History of Globalization 
-3. Connnected history: Supra-local flows across political boundaries (Early modern Euroasian relations)
-4. Histoire croisee: The points of crossing between different historical formations, 
+2. Global History: History of Globalization 
+3. [[subrahmanyamConnectedHistoriesNotes1997|Connnected history]]: Supra-local flows across political boundaries (Early modern Euroasian relations)
+4. [[wernerComparisonHistoireCroisee2006|Histoire croisee]]: The points of crossing between different historical formations, 
 5. Culture transfer: Not all cultural differences mirror national boundaries. The cultural differences that exist imply acculturation, and need to be understood by paying attention to the economic, technological and human methods of culture transfer. 
 6. 
 ## Transnational history as separate from traditional historiographical approaches? 

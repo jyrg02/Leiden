@@ -7,5 +7,14 @@
       ],
       "key": "F"
     }
+  ],
+  "obsidian-zotero-desktop-connector:zdc-Citation": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Z"
+    }
   ]
 }

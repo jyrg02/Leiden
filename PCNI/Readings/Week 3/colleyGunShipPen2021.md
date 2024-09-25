@@ -1,4 +1,4 @@
-Time taken to read: 
+xTime taken to read: 
 > [!Cite]  
 > Colley, L. (2021). _The Gun, the Ship, and the Pen: Warfare, Constitutions, and the Making of the Modern World Hardcover_. Liveright Publishing Corporation, a Division of W.W. Norton & Company.
 
@@ -40,6 +40,7 @@ Does not give it equal weight. The comparative features of Haiti are used to rea
 Attributes the writing of 
 the attention they (enlightment writers) paid to different parts of the globe and to the operation of power and military violence were vital aspects of their appeal to those in high office p.57
 that in an age of rampant, expensive and disruptive military violence on land and sea, innovatory and informed legislators might intervene so as to bind up society’s wounds, re-establish order, remodel their respective states p. 58
+Constitutions are not just descriptions of how state work but also enshrine rights.[^19]
 ### Russia 
 Catherine accepts and begins the nakaz because she needs to cement her position p. 64. Her position was tenous because she was not russian and had no claim by blood to the throne p. 65
 For the author the thing that makes a constitution is when the ruler binds themselves to it 
@@ -80,14 +81,29 @@ Different from US:
 Constitutions: 
 1. Attracted informal practitioners
 2. Sometimes the reform was not simply a reform on a government of the homeland, planned for other territories 
-People were ==politized== by the spread of the constituion and insipiring scripts.[^12]
+People were ==politized== by the spread of the constitution and inspiring scripts.[^12] 
+One of the main drivers for Napoleon's expansion was additional supplies and money. [^13]
+Napoleon is an example of a constitution being used to further cement certain totalitarian aspects, while he gave Italy nominal freedom in their constitution 
+# Chapter 5
+* Britain wrote constituions for others until there was no others left[^14] 
+* The civil wars and reovlution of 1688 constrianed writing in britain and strengthend the state which menat that it was able to sustain the strains of the 18th century, the hybrid warfare
+* Its staiblity was also due to the indian colony. 
+# Chapter 6 
+sometimes consitutions were used to further entrench inequalities, as seen with the example of women[^16] 
+constitutions become a marker of modernity[^17]
+Formalization of democracy accompanies a restriction of women from political sphere. 
+Constitutions make it harder to change things.[^17] In New Zealand pitcairn did not give up their writing rights and they were allowed to vote, this is because a recognized state agent had written these political rights on paper, the pitcairn women had it in writing[^18]
+Every citizen a soldier p. 233. Citizenshhip was sometiems followed fighting for a country despite not belonging to it[^20] 
+women often did not engage in armed conflict. 
 
 # Assignment notes
+She makes the point that the reason states come under strain with hybrid warfare.[^15]
 ## Politics
 The author views politics through a high politics lense. The text for example with catherine discusses very much government and the issues that move Catherine towards making the nakaz as pressures from the outside, threats to her position. The text acknowledges the influence of the enlightenment but does not go into depth with it. The author also contradicts themselves later on when they state that "Catherine initially planned to use the nakaz to ease the conditions of these people"[^1] (referring to the serfs, women, non-noble). It seems like the author wants to discuss both aspects of high and low politics but the main thesis they want to put forth, that constitutions and war go hand in hand, does not favour this mixed framing. 
 ## Nationalism 
 Constitutions can be used to establish themselves and promote and define themselves across the globe.[^8]
 Certain constitutions were used to define citizenship, for example in Mexico the lack of distinction between european, africans or indians.[^9]
+Active citizenship was thus explicitly gendered, and tied to military service[^13]
 # Footnotes
 
 [^1]: p. 70
@@ -102,3 +118,11 @@ Certain constitutions were used to define citizenship, for example in Mexico the
 [^10]: 130
 [^11]: 138
 [^12]: 143
+[^13]: 153
+[^14]: 183
+[^15]: 186
+[^16]: 226
+[^17]: 230
+[^18]: 231
+[^19]: 231
+[^20]: 234
