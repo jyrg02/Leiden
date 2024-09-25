@@ -4,16 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a50312ac291bd949",
+        "id": "2520777d0927dc14",
         "type": "tabs",
+        "dimension": 51.47313691507799,
         "children": [
           {
-            "id": "0011760694a5ca78",
+            "id": "667b7ae915860d57",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PCNI/Readings/Week 3/colleyGunShipPen2021.md",
+                "file": "Comparing and Connecting/Assignments/Laundry List.md",
                 "mode": "source",
                 "source": false
               }
@@ -22,16 +23,17 @@
         ]
       },
       {
-        "id": "b370cd7ba5e12167",
+        "id": "250b6c278be4eb3c",
         "type": "tabs",
+        "dimension": 48.52686308492201,
         "children": [
           {
-            "id": "fb772bb1d6df1627",
+            "id": "da113389e506f49c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PCNI/Readings/Week 3/Seminar 3 (PCNI).md",
+                "file": "Comparing and Connecting/Readings/Week 3/Seminar 3 (Comparing).md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PCNI/Readings/Week 3/Seminar 3 (PCNI).md",
+                "file": "Comparing and Connecting/Readings/Week 3/Seminar 3 (Comparing).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PCNI/Readings/Week 3/Seminar 3 (PCNI).md",
+                "file": "Comparing and Connecting/Readings/Week 3/Seminar 3 (Comparing).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PCNI/Readings/Week 3/Seminar 3 (PCNI).md"
+                "file": "Comparing and Connecting/Readings/Week 3/Seminar 3 (Comparing).md"
               }
             }
           }
@@ -165,44 +167,43 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "fb772bb1d6df1627",
+  "active": "da113389e506f49c",
   "lastOpenFiles": [
-    "PCNI/Readings/Week 3/colleyGunShipPen2021.md",
-    "PCNI/Readings/Week 3/Seminar 3 (PCNI).md",
+    "Comparing and Connecting/Mid-term/Citizens without Nations/~~$5.pdf",
+    "Comparing and Connecting/Readings/Week 3/conradWhatGlobalHistory2017.pdf",
+    "Comparing and Connecting/Assignments/Laundry List.md",
+    "Comparing and Connecting/Readings/Week 3/Seminar 3 (Comparing).md",
+    "Comparing and Connecting/Readings/Week 1/Seminar 1(Comparing).md",
+    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/Seminar - 6 week course apparently lmao.md",
+    "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
+    "Comparing and Connecting/Readings/Week 1/hobsbawmPoliticalShoemakers1980.pdf",
     "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.md",
-    "Comparing and Connecting/Readings/Week 3/~~$osterhammelGlobalHistoryHistorical2016.pdf",
-    "Comparing and Connecting/Readings/Week 3/~~$goldstoneDatingGreatDivergence2021.pdf",
-    "Comparing and Connecting/Mid-term/~WRL1387.tmp",
-    "Comparing and Connecting/Mid-term/~WRD1379.tmp",
-    "Comparing and Connecting/Mid-term/~WRL3915.tmp",
-    "Comparing and Connecting/Mid-term/~WRD3903.tmp",
-    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.pdf",
-    "Comparing and Connecting/Readings/Week 3/goldstoneDatingGreatDivergence2021.md",
-    "Comparing and Connecting/Readings/Week 3/goldstoneDatingGreatDivergence2021.pdf",
-    "Comparing and Connecting/Readings/Week 3/goldstoneDatingGreatDivergence2021.pdf.opdownload",
-    "Comparing and Connecting/Readings/Week 3/pennockGlobalizingCosmologies2018.pdf",
+    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
+    "Comparing and Connecting/Readings/Week 3/10.1515_9781400880966-004 (1).pdf",
+    "Comparing and Connecting/Readings/Week 3/conradWhatGlobalHistory2017.md",
+    "Comparing and Connecting/Readings/Week 3/osterhammelGlobalHistoryHistorical2016.pdf",
     "Comparing and Connecting/Readings/Week 3/pennockGlobalizingCosmologies2018.md",
     "Comparing and Connecting/Readings/Week 3/osterhammelGlobalHistoryHistorical2016.md",
-    "Comparing and Connecting/Readings/Week 3/conradWhatGlobalHistory2017.md",
+    "Comparing and Connecting/Readings/Week 3/pennockGlobalizingCosmologies2018.pdf",
+    "Comparing and Connecting/Readings/Week 3/goldstoneDatingGreatDivergence2021.md",
+    "Comparing and Connecting/Mid-term/Citizens without Nations/11.pdf",
+    "Comparing and Connecting/Mid-term/Citizens without Nations/11.pdf.opdownload",
+    "Comparing and Connecting/Mid-term/Citizens without Nations/10.pdf",
+    "Comparing and Connecting/Mid-term/Citizens without Nations/10.pdf.opdownload",
+    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/wernerComparisonHistoireCroisee2006.md",
+    "Admin/To do.md",
+    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/subrahmanyamConnectedHistoriesNotes1997.md",
+    "Comparing and Connecting/Assignments/seminar.md",
+    "PCNI/Readings/Week 3/colleyGunShipPen2021.md",
+    "PCNI/Readings/Week 3/Seminar 3 (PCNI).md",
     "osterhammelGlobalHistoryHistorical2016.md",
-    "Comparing and Connecting/Readings/Week 1/kockaComparativeHistoryMethodology2009.md",
-    "Comparing and Connecting/Readings/Week 1/Seminar 1(Comparing).md",
     "Comparing and Connecting/Assignments/Assignment 1 (Comparing and Connecting).md",
     "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
     "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
     "Comparing and Connecting/Mid-term/Mid-Term (Comparing).md",
     "PCNI/Readings/Week 3/Linda Colley Timeline.md",
     "PCNI/Readings/Week 2/Assignment 2.md",
-    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
     "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
-    "Comparing and Connecting/Readings/Week 1/Untitled.md",
-    "PCNI/Readings/Week 2/Assignment 2 (PCNI)  - Draft.md",
-    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/Seminar - 6 week course apparently lmao.md",
-    "Comparing and Connecting/Assignments/spivakGeneralStrike2014.md",
-    "Comparing and Connecting/Readings/Untitled.md",
-    "Comparing and Connecting/Assignments/seminar.md",
-    "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/Untitled.md",
-    "PCNI/Readings/Week 2/Week 2 - Seminar (PCNI).md",
     "Pasted image 20240920112547.png",
     "Media/Pasted image 20240918122626.png",
     "Media/PCNI - Types of Comparisons (Comparative History).png",
