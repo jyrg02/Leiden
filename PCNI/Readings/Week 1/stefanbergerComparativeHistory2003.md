@@ -54,7 +54,7 @@ The rise of comparative studies coincides with two things
 	* Symmetrical: Give weight to all of the cases compared. 
 >Tends to have 2 to 5 cases which are systematically compared either by country or by themes --> Seminar 
 * Encompassing comparisons: Explaining differences between cases that share general commonalities (*ej: nationalism studies*)--> Not as useful according to Storm
-* Variation-finding: Different cases are understood as one variation of a particular phenomena. (*ej: comparative fascism*) 
+* xVariation-finding: Different cases are understood as one variation of a particular phenomena. (*ej: comparative fascism*) 
 * Synchronic comparisons: Concerned with a particular event and ignoring historical antecedents (p. 167) --> Not as useful according to Storm
 * Diachronic comparisons: Concerned with changes of concepts over a period of time. "Different times for different social contexts" (p. 167)
 >[!note] Intentions 
