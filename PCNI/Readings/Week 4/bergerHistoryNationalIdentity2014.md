@@ -33,6 +33,25 @@ Time taken to read:
 >>  
 
 # Nationalism 
+Nation: Constructed entity 
+
 # Politics
+Used to construct nations. 
+High politics: How historians interacted with the state aparatus 
+State
+* Archives p. 146
+Formalization coming from the state: 153-158
 # Transfers 
-# Nationalism 
+How historians contradicted each other to form central thesis 
+master narratives p. 161 
+education abroad: p. 159
+
+# Culture 
+The influential thoughts at the time and how they impacted the thinkers of the time. 
+Culture around countries erving to profesionalize the profession of history 
+Historical societies: 130-131
+art, lit: 90/94 
+library and books: 154
+
+
+# Essay 

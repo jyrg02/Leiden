@@ -1,0 +1,3 @@
+Berger adopts a high politics approach. His analysis examines state action, particularly its impact in the development of history as a field. His view of the The origin of the field as well as professionalization was incentivized by the needs of the state. Major turns within history are also discussed within political contexts such as the influence of historiographical nationalism in both world wars. This approach advances the perspective that historians as a field have been politized from the very beginning, with historians using history to create master narratives which legitimize regimes, territorial claims, etc. 
+
+# 

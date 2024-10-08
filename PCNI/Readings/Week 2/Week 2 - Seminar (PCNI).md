@@ -28,7 +28,7 @@ Transfers
 # [[steinmetzPoliticalCommunicativeSpace2013]]
 Overview of the biefield approach 
 Beginning of the political 
-* Top down approach (Traditional historians) --> High politics 
+* Top down approach (Traditional historians) --> High politics  
 * Low politics (Social sciences) --> Civil society[^2], social movements. [^1] 
 Cultural Turn:
 * Annales: Before ww2. Focus on long durée, long term developments. Reject political history. History was defined as three layers. 
