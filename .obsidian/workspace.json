@@ -13,7 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
+                "file": "PCNI/Readings/Week 5/mazowerDarkContinentEuropes1999.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bb171c80f7fced1f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "474188664d246a1e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3229a0cbd350e47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Comparing and Connecting/Final/Readings/liuChineseMerchantGuilds1988.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +96,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -148,30 +178,35 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "da113389e506f49c",
+  "active": "bb171c80f7fced1f",
   "lastOpenFiles": [
+    "PCNI/Readings/Week 5/mazowerDarkContinentEuropes1999.md",
+    "Untitled.md",
+    "Comparing and Connecting/Final/Final (Comparing).md",
+    "Comparing and Connecting/Final/Readings/moll-murataMerchantCraftGuilds2018.md",
+    "Comparing and Connecting/Final/~~$moll-murataMerchantCraftGuilds2018.pdf",
+    "Comparing and Connecting/Final/Readings/liuChineseMerchantGuilds1988.md",
+    "Comparing and Connecting/Final/moll-murataMerchantCraftGuilds2018.pdf",
+    "Comparing and Connecting/Final/Readings/moll-murataMerchantCraftGuilds2018.pdf",
+    "Comparing and Connecting/Final/Readings/moll-murataMerchantCraftGuilds2018.pdf.opdownload",
+    "Comparing and Connecting/Final/Readings",
+    "Comparing and Connecting/Final/Untitled.md",
+    "Comparing and Connecting/Final/~~$liuChineseMerchantGuilds1988.pdf",
+    "Comparing and Connecting/Mid-term/Citizens without Nations/~~$CITIZE_1.PDF",
+    "Comparing and Connecting/Mid-term/Citizens without Nations/CITIZE_1.PDF",
+    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
     "Notes.md",
     "Comparing and Connecting/Final/Wage labor & guilds in medieval - Epstein, Steven, 1952-.pdf",
     "Comparing and Connecting/Final/Wage labor & guilds in medieval - Epstein, Steven, 1952 (PDFA).pdf",
-    "PCNI/Readings/Week 5/Dark Continent Europes Twentieth Century (Mark Mazower) (Z-Library).pdf",
-    "Comparing and Connecting/Final/~$eting Plan 03-10-2024.docx",
-    "Comparing and Connecting/~WRL4052.tmp",
-    "Comparing and Connecting/~WRD4048.tmp",
-    "Comparing and Connecting/~WRL2560.tmp",
-    "Comparing and Connecting/~WRD2552.tmp",
-    "Comparing and Connecting/~WRL1015.tmp",
-    "Comparing and Connecting/~WRD1011.tmp",
     "PCNI/Readings/Week 4/bergerHistoryNationalIdentity2014.md",
     "PCNI/Readings/Week 4/Week 4 Assignment.md",
     "PCNI/Readings/Week 4/Seminar 4.md",
     "PCNI/Readings/Week 3/colleyGunShipPen2021.md",
-    "Comparing and Connecting/Final/liuChineseMerchantGuilds1988.md",
     "PCNI/Readings/Week 3/Seminar 3 (PCNI).md",
     "Academic Skills and Thesis/Week 5.md",
     "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
     "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
     "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
-    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
     "PCNI/Readings/Week 2/Week 2 - Seminar (PCNI).md",
     "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/subrahmanyamConnectedHistoriesNotes1997.md",
     "Comparing and Connecting/Readings/Week 3/Seminar 3 (Comparing).md",
@@ -182,10 +217,6 @@
     "Comparing and Connecting/Mid-term/Mid-term Assignment (Comparing).md",
     "Comparing and Connecting/Readings/Week 3/pennockGlobalizingCosmologies2018.md",
     "Comparing and Connecting/Readings/Week 2 (16-22 Sept)/wernerComparisonHistoireCroisee2006.md",
-    "Comparing and Connecting/Readings/Week 1/BlochMarc2022ACTa.md",
-    "Comparing and Connecting/Mid-term/Laundry List FR.md",
-    "Comparing and Connecting/Mid-term/Mid-Term (Comparing).md",
-    "Comparing and Connecting/Assignments/Laundry List.md",
     "Pasted image 20240920112547.png",
     "Media/Pasted image 20240918122626.png",
     "Media/PCNI - Types of Comparisons (Comparative History).png",
