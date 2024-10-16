@@ -25,32 +25,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
+                "file": "PCNI/Readings/Week 5/Seminar 5 PCNI.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
           }
         ],
         "currentTab": 1
-      },
-      {
-        "id": "474188664d246a1e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a3229a0cbd350e47",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PCNI/Readings/Week 1/Week 1 - Seminar (PCNI).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -116,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
+                "file": "PCNI/Readings/Week 5/Seminar 5 PCNI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
+                "file": "PCNI/Readings/Week 5/Seminar 5 PCNI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,16 +139,32 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md"
+                "file": "PCNI/Readings/Week 5/Seminar 5 PCNI.md"
               }
             }
+          },
+          {
+            "id": "521e521cbc8732c0",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "645854661be3c1a2",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-chat-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,11 +174,21 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "smart-connections:Open: View Smart Connections": false,
+      "smart-connections:Open: Smart Chat Conversation": false
     }
   },
   "active": "bb171c80f7fced1f",
   "lastOpenFiles": [
+    "PCNI/Readings/Week 6/All That She Carried_ The Journ - Tiya Miles.pdf",
+    "PCNI/Readings/Week 5/Seminar 5 PCNI.md",
+    "PCNI/Readings/Week 5/Dark Continent Europes Twentieth Century (Mark Mazower) (Z-Library).pdf",
+    "smart-chats/UNTITLED CHAT 2024-10-15 13 34 56.md",
+    "smart-chats",
+    "PCNI/Readings/Week 1/Week 1 - Seminar (PCNI).md",
+    "Semester 1",
+    "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
     "PCNI/Assignments/~WRL3948.tmp",
     "PCNI/Assignments/~WRD3940.tmp",
     "PCNI/Assignments/~WRD0255.tmp",
@@ -187,12 +196,7 @@
     "PCNI/Assignments/~WRD0646.tmp",
     "PCNI/Assignments/~WRL4019.tmp",
     "PCNI/Assignments/~WRD4012.tmp",
-    "PCNI/Assignments/~WRL0415.tmp",
-    "PCNI/Assignments/~WRD0407.tmp",
-    "PCNI/Assignments/~WRL3941.tmp",
-    "PCNI/Assignments/~WRD3933.tmp",
     "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
-    "PCNI/Readings/Week 1/Week 1 - Seminar (PCNI).md",
     "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
     "PCNI/Readings/Week 3/Seminar 3 (PCNI).md",
     "PCNI/Readings/Week 2/Week 2 - Seminar (PCNI).md",
@@ -213,9 +217,6 @@
     "PCNI/Readings/Week 5/gallagherDarkContinentEuropes1999.md",
     "PCNI/Readings/Week 5/shermanDARKCONTINENTMark1998.md",
     "PCNI/Readings/Week 5/fessendenDarkContinentEuropes1999.md",
-    "PCNI/Readings/Week 5/sassoonMarkMazowerDark2000.md",
-    "PCNI/Readings/Week 4/Week 4 Assignment.md",
-    "Comparing and Connecting/Final/Final (Comparing).md",
     "Pasted image 20240929160558.png",
     "Pasted image 20240920112547.png",
     "Media/Pasted image 20240918122626.png",

@@ -1,5 +1,8 @@
 {
   "ITS@@accent-color": false,
   "ITS@@slrvb-b": true,
-  "ITS@@default-font": "'Fira Code Medium'"
+  "ITS@@default-font": "'Fira Code Medium'",
+  "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-latte",
+  "anuppuccin-theme-settings@@anp-canvas-dark-bg": true,
+  "anuppuccin-theme-settings@@anp-status-bar-select": "anp-floating-status-bar"
 }
