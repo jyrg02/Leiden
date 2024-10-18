@@ -13,3 +13,7 @@ Can the chinese case be used
 * Alliances and merchants 
 * How 
 Matrix table for comparison
+
+---
+Citizenship --> Doesnt really explain how that plays into guilds and their internal differences. 
+Relation to government and their origins 
