@@ -15,8 +15,11 @@
               "state": {
                 "file": "PCNI/Readings/Week 5/mazowerDarkContinentEuropes1999.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "mazowerDarkContinentEuropes1999"
             }
           },
           {
@@ -29,11 +32,28 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "liuChineseMerchantGuilds1988"
+            }
+          },
+          {
+            "id": "f267f7f9c78defea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Comparing and Connecting/Final/Readings/liuChineseMerchantGuilds1988.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "liuChineseMerchantGuilds1988"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -53,7 +73,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -68,7 +90,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -76,7 +100,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -107,7 +133,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for liuChineseMerchantGuilds1988"
             }
           },
           {
@@ -119,7 +147,9 @@
                 "file": "Comparing and Connecting/Final/Readings/liuChineseMerchantGuilds1988.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from liuChineseMerchantGuilds1988"
             }
           },
           {
@@ -130,7 +160,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -140,7 +172,9 @@
               "type": "outline",
               "state": {
                 "file": "Comparing and Connecting/Final/Readings/liuChineseMerchantGuilds1988.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "Outline of liuChineseMerchantGuilds1988"
             }
           },
           {
@@ -148,7 +182,9 @@
             "type": "leaf",
             "state": {
               "type": "smart-connections-view",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -156,7 +192,9 @@
             "type": "leaf",
             "state": {
               "type": "smart-connections-chat-view",
-              "state": {}
+              "state": {},
+              "icon": "message-square",
+              "title": "Smart Connections Chat"
             }
           }
         ],
@@ -179,27 +217,29 @@
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "bb171c80f7fced1f",
+  "active": "f267f7f9c78defea",
   "lastOpenFiles": [
-    "Comparing and Connecting/Final/liuChineseMerchantGuilds1988.pdf",
-    "PCNI/Readings/Week 5/mazowerDarkContinentEuropes1999.md",
-    "Comparing and Connecting/Final/~WRL0117.tmp",
-    "Comparing and Connecting/Final/~WRD0106.tmp",
-    "Comparing and Connecting/Final/1173-2176-1-PB.pdf",
+    "Comparing and Connecting/Final/~WRL1543.tmp",
+    "Comparing and Connecting/Final/~WRD1535.tmp",
+    "Comparing and Connecting/Final/~WRL1800.tmp",
+    "Comparing and Connecting/Final/~WRD1729.tmp",
+    "Comparing and Connecting/Final/~WRL1296.tmp",
+    "Comparing and Connecting/Final/~WRD1292.tmp",
+    "Comparing and Connecting/Final/~WRL3336.tmp",
+    "Comparing and Connecting/Final/~WRD3328.tmp",
+    "Comparing and Connecting/Final/~WRL1600.tmp",
+    "Comparing and Connecting/Final/~WRD1592.tmp",
+    "Comparing and Connecting/Final/fewsmith1983.pdf",
     "Comparing and Connecting/Final/Readings/moll-murataMerchantCraftGuilds2018.md",
     "Comparing and Connecting/Final/Readings/liuChineseMerchantGuilds1988.md",
-    "Comparing and Connecting/Final/CITIZE_1.PDF",
-    "Comparing and Connecting/Final/Qiao Dissertation Submit-augmented.pdf",
+    "Comparing and Connecting/Mid-term/Mid-Term (Comparing).md",
+    "Comparing and Connecting/Mid-term/Laundry List FR.md",
     "Comparing and Connecting/Final/lucassenReturnGuildsGlobal2008.md",
+    "PCNI/Readings/Week 5/mazowerDarkContinentEuropes1999.md",
     "Comparing and Connecting/Final/Final (Comparing).md",
     "Comparing and Connecting/Mid-term/prakCitizensNationsUrban2018.md",
     "Comparing and Connecting/Mid-term/Mid-term Assignment (Comparing).md",
-    "Comparing and Connecting/Mid-term/Mid-Term (Comparing).md",
     "Comparing and Connecting/Readings/Week 3/Seminar 3 (Comparing).md",
-    "Comparing and Connecting/Mid-term/~$d Term (Comparing FR).docx",
-    "Comparing and Connecting/Mid-term/~$Roig - Mid-Term ver 2 (Comparing).docx",
-    "Comparing and Connecting/Mid-term/~$Roig - Mid-Term (Comparing).docx",
-    "Comparing and Connecting/Final/~$mparing Final.docx",
     "PCNI/Readings/Week 5/Seminar 5 PCNI.md",
     "smart-chats/UNTITLED CHAT 2024-10-15 13 34 56.md",
     "PCNI/Readings/Week 1/Week 1 - Seminar (PCNI).md",
@@ -215,7 +255,6 @@
     "Thesis/Meeting with Dr. Brackney.md",
     "Admin/Academics.md",
     "Admin/Reading.md",
-    "Admin/Thesis Planning.md",
     "Pasted image 20240929160558.png",
     "Pasted image 20240920112547.png",
     "Media/Pasted image 20240918122626.png",
