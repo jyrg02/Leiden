@@ -1,6 +1,11 @@
 {
-  "cssTheme": "AnuPpuccin",
+  "cssTheme": "Fancy-a-Story",
   "interfaceFontFamily": "Inter",
-  "textFontFamily": "Inter",
-  "monospaceFontFamily": "Inter"
+  "textFontFamily": "Agency FB",
+  "monospaceFontFamily": "Inter",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "additional_fonts (1)"
+  ],
+  "accentColor": "#ffffff"
 }

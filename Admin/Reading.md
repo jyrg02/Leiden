@@ -2,10 +2,10 @@ Time taken to read:
 > [!Cite]  
 > {{bibliography}}
 
-> [!Synth]  
+> [!info] Synth  
 >**Contribution**::
 
->[!md]  Metadata
+>[!info]  Metadata
 > {%- for creator in creators %} {%- if creator.name == null %} **{{creator.creatorType | capitalize}}**:: {{creator.lastName}}, {{creator.firstName}}{%- endif -%}</br>  
 > {%- if creator.name %}**{{creator.creatorType | capitalize}}**:: {{creator.name}}{%- endif -%}{%- endfor %}    
 > **Title**:: {{title}}    

@@ -1,11 +1,16 @@
+---
+cssclasses:
+  - sci-fi
+---
+
 Time taken to read: 
 > [!Cite]  
 > Sherman, A. (1998). DARK CONTINENT by Mark Mazower (book review). _The Spectator_, _281_(8866), 32.
 
-> [!Synth]  
+> [!error]  
 >**Contribution**::
 
->[!md]  Metadata
+>[!tip]  Metadata
 > **Author**:: Sherman, Alfred</br>  
 >    
 > **Title**:: DARK CONTINENT by Mark Mazower (book review)    
@@ -26,5 +31,5 @@ Time taken to read:
 > [!LINK]   
 >.
 
-> [!Abstract]  
+> [!check]  
 >>  

@@ -1,4 +1,8 @@
-Time taken to read: 
+---
+cssclasses: []
+---
+
+	Time taken to read: 
 > [!Cite]  
 > Jones, S. (2017). Cross-border collaboration and the construction of memory narratives in Europe. In _The twentieth century in European memory_ (pp. 25–55). Brill.
 

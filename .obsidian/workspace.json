@@ -13,47 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PCNI/Readings/Week 5/mazowerDarkContinentEuropes1999.md",
+                "file": "Admin/Reading.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mazowerDarkContinentEuropes1999"
+              "title": "Reading"
             }
           },
           {
-            "id": "bb171c80f7fced1f",
+            "id": "6014ced2f1ee944d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comparing and Connecting/Final/Readings/liuChineseMerchantGuilds1988.md",
+                "file": "Comparing and Connecting/Final/Final (Comparing).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "liuChineseMerchantGuilds1988"
-            }
-          },
-          {
-            "id": "f267f7f9c78defea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "stefanbergerComparativeHistory2003"
+              "title": "Final (Comparing)"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,8 +90,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -117,6 +101,65 @@
     "type": "split",
     "children": [
       {
+        "id": "5fd3106b76236e74",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "566c4734f4724f9e",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Comparing and Connecting/Final/Final (Comparing).md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of Final (Comparing)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "048a9fc4b3d07750",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "362d0188dfea5f12",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Smart Connections"
+            }
+          }
+        ]
+      },
+      {
         "id": "7a6c6c105ddae1d2",
         "type": "tabs",
         "children": [
@@ -126,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Comparing and Connecting/Final/Readings/liuChineseMerchantGuilds1988.md",
+                "file": "Comparing and Connecting/Final/Final (Comparing).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +179,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for liuChineseMerchantGuilds1988"
+              "title": "Backlinks for Final (Comparing)"
             }
           },
           {
@@ -145,12 +188,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Comparing and Connecting/Final/Readings/liuChineseMerchantGuilds1988.md",
+                "file": "Comparing and Connecting/Final/Final (Comparing).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from liuChineseMerchantGuilds1988"
+              "title": "Outgoing links from Final (Comparing)"
             }
           },
           {
@@ -172,10 +215,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Comparing and Connecting/Final/Readings/liuChineseMerchantGuilds1988.md"
+                "file": "Comparing and Connecting/Final/Final (Comparing).md"
               },
               "icon": "lucide-list",
-              "title": "Outline of liuChineseMerchantGuilds1988"
+              "title": "Outline of Final (Comparing)"
             }
           },
           {
@@ -184,8 +227,8 @@
             "state": {
               "type": "smart-connections-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "smart-connections",
+              "title": "Smart Connections"
             }
           },
           {
@@ -195,11 +238,10 @@
               "type": "smart-connections-chat-view",
               "state": {},
               "icon": "message-square",
-              "title": "Smart Connections Chat"
+              "title": "Smart Chat Conversation View"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
@@ -218,51 +260,54 @@
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "f267f7f9c78defea",
+  "active": "6014ced2f1ee944d",
   "lastOpenFiles": [
-    "PCNI/Assignments/~$ek 5 - JYRoig.docx",
-    "PCNI/Assignments/~WRL0647.tmp",
-    "PCNI/Assignments/~WRD0643.tmp",
-    "PCNI/Assignments/~WRL1935.tmp",
-    "PCNI/Assignments/~WRD1931.tmp",
-    "PCNI/Assignments/~WRL0915.tmp",
-    "PCNI/Assignments/~WRD0911.tmp",
-    "PCNI/Assignments/~WRL3007.tmp",
-    "PCNI/Assignments/~WRD3003.tmp",
-    "PCNI/Assignments/~WRL3803.tmp",
-    "PCNI/Assignments/~WRD3795.tmp",
-    "PCNI/Readings/Week 5/Seminar 5 PCNI.md",
-    "PCNI/Readings/Week 4/bergerHistoryNationalIdentity2014.md",
-    "PCNI/Readings/Week 4/Seminar 4.md",
-    "PCNI/Readings/Week 2/stormNewDawnNationalism2018.md",
-    "PCNI/Readings/Week 1/stefanbergerComparativeHistory2003.md",
-    "PCNI/Readings/Week 6/milesAllThatShe2024.md",
-    "PCNI/Readings/Week 2/Week 2 - Seminar (PCNI).md",
-    "Comparing and Connecting/Final/Readings/liuChineseMerchantGuilds1988.md",
-    "Comparing and Connecting/Mid-term/Laundry List FR.md",
-    "PCNI/Readings/Week 2/Assignment 2.md",
-    "PCNI/Readings/Week 3/Seminar 3 (PCNI).md",
-    "Comparing and Connecting/Final/Readings/moll-murataMerchantCraftGuilds2018.md",
-    "Comparing and Connecting/Mid-term/Mid-Term (Comparing).md",
-    "Comparing and Connecting/Final/lucassenReturnGuildsGlobal2008.md",
-    "PCNI/Readings/Week 5/mazowerDarkContinentEuropes1999.md",
-    "Comparing and Connecting/Final/Final (Comparing).md",
-    "Comparing and Connecting/Mid-term/prakCitizensNationsUrban2018.md",
-    "Comparing and Connecting/Mid-term/Mid-term Assignment (Comparing).md",
-    "Comparing and Connecting/Readings/Week 3/Seminar 3 (Comparing).md",
-    "smart-chats/UNTITLED CHAT 2024-10-15 13 34 56.md",
-    "PCNI/Readings/Week 1/Week 1 - Seminar (PCNI).md",
-    "PCNI/Readings/Week 1/macdonaldTransnationalHistoryReview2013.md",
-    "PCNI/Readings/Week 2/steinmetzPoliticalCommunicativeSpace2013.md",
-    "PCNI/Readings/Week 2/Assignment 2 (PCNI)  - Draft.md",
-    "Thesis/Meeting with Dr. Brackney.md",
+    "Comparing and Connecting/Final/~WRL3558.tmp",
+    "Comparing and Connecting/Final/~WRD3543.tmp",
+    "Comparing and Connecting/Final/~WRD2587.tmp",
+    "Comparing and Connecting/Final/~WRL0005.tmp",
+    "Comparing and Connecting/Final/~WRD0004.tmp",
+    "Comparing and Connecting/Final/~WRL0003.tmp",
+    "Comparing and Connecting/Final/~WRD0002.tmp",
+    "Comparing and Connecting/Final/~WRL0001.tmp",
+    "Comparing and Connecting/Final/~WRD0000.tmp",
+    "Comparing and Connecting/Final/~$mparing Final.docx",
+    "Comparing and Connecting/Final/Wage labor & guilds in medieval - Epstein, Steven, 1952-.pdf",
+    "PCNI/Readings/Week 3/colleyGunShipPen2021.md",
+    "PCNI/Readings/Week 3/Linda Colley Timeline.md",
+    "vaughanCulture2011.md",
     "Pasted image 20240929160558.png",
+    "Test.md",
+    "Thesis/Meeting with Dr. Brackney.md",
+    "hobsbawmPoliticalShoemakers1980.md",
+    "Semester 1.md",
+    "Comparing and Connecting/Assignments/Laundry List.md",
+    "Admin/CWCapacityPermaReward.webp",
+    "Admin/Reading.md",
+    "Admin/CyberpunkV1BlackYellow_c7f094c7-ae70-48cf-b456-80dae21e720a.jpg",
+    "Admin/CyberpunkV1Black_a4f9c5aa-2d2f-494b-9633-fb04c405995a.jpg",
+    "Admin/tablet-with-blue-display-that-says-cyberpunk-it_492154-12670.avif",
+    "Admin/tablet-with-blue-background-blue-background-with-word-facebook-it_492154-12664.avif",
     "Pasted image 20240920112547.png",
+    "Lecture notes.md",
+    "Thesis/jones2017cross.md",
+    "Thesis/Prep for meeting.md",
+    "Thesis/Törnquist-Plewa.md",
+    "Thesis/To read (THESIS).md",
+    "Thesis/Poland Museum/suszkiewiczRiseRighteousNations2016.md",
+    "Thesis/Poland Museum/Possible Plan.md",
+    "Thesis/feindtEntangledMemoryThird2014.md",
+    "Admin/Academics.md",
+    "Thesis/Poland Museum/clarkePolishCulturalDiplomacy2020.md",
+    "Thesis/Poland Museum/casteelHistoricizingNationTransnational2011.md",
+    "Thesis/Poland Museum/machcewiczWarThatNever2021.md",
+    "Thesis/Poland Museum/hojaEngagedNarrativePermanent2020.md",
+    "Thesis/Poland Museum/hewittPolandsNewWorld2018.md",
+    "Thesis/Poland Museum/wassermannEuropeanizationHolocaustWorld2019.md",
+    "Thesis/Poland Museum/Museum of the Second World War in Gdańsk (MIIWS).md",
+    "Pasted image 20241022142326.png",
     "Media/Pasted image 20240918122626.png",
     "Media/PCNI - Types of Comparisons (Comparative History).png",
-    "Media/Pasted image 20240918122612.png",
-    "Media/Pasted image 20240918122517.png",
-    "Media/Pasted image 20240918122533.png",
     "Media/PCNI - Types of Comparisons (Comparative History).canvas"
   ]
 }

@@ -5,7 +5,7 @@ Time taken to read:
 > [!Synth]  
 >**Contribution**::
 
->[!md]  Metadata
+>[!info]  Metadata
 > **Author**:: Hobsbawm, E. J.</br>  
 > **Author**:: Scott, Joan Wallach</br>  
 >    

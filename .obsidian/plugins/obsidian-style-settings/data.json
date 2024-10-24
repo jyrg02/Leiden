@@ -4,5 +4,17 @@
   "ITS@@default-font": "'Fira Code Medium'",
   "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-latte",
   "anuppuccin-theme-settings@@anp-canvas-dark-bg": true,
-  "anuppuccin-theme-settings@@anp-status-bar-select": "anp-floating-status-bar"
+  "anuppuccin-theme-settings@@anp-status-bar-select": "anp-floating-status-bar",
+  "fancy-a-story@@fas-sidebar-texture-custom": true,
+  "fancy-a-story@@sidebar-texture-custom": "url(\"https://media.istockphoto.com/id/878419410/nl/vector/raster-voor-futuristische-hud-interface-technologie-vector-lijnpatroon.jpg?s=1024x1024&w=is&k=20&c=utROPTKutkSrI6Tpi9IYgA0hixxI85iUb--PucXTwY8=\")",
+  "fancy-a-story@@sidebar-texture-blend-custom": "normal",
+  "fancy-a-story@@sidebar-texture-blend-custom-dark": "normal",
+  "fancy-a-story@@fas-file-explorer-decoration-custom": true,
+  "fancy-a-story@@file-explorer-decoration-custom": "url(\"https://img.freepik.com/premium-vector/futuristic-sci-fi-hud-circle-element-abstract-hologram-design-background-virtual-reality_617133-1225.jpg?w=1380\")",
+  "fancy-a-story@@sidebar-texture-position-custom": "center left",
+  "fancy-a-story@@theme-variant-dark": "fas-unwerwater",
+  "fancy-a-story@@header-color": "fas-headings-accent",
+  "fancy-a-story@@note-accent-1@@light": "#FFFFFF",
+  "fancy-a-story@@header-style-h1": "fas-h1-stroke",
+  "fancy-a-story@@link-decoration": "underline"
 }
