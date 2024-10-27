@@ -50,7 +50,7 @@ are the choices not great for comparison
 * Note: Object of comparison does not need to be a human 
 * Asymetrical comparison 
 	* Good heuristics need to be done and acknowledged. 
-* Self-reflixvity 
+* Self-reflexivity 
 	* Do not just reflect on your work but also make sure that you reflect on how your own experience, the things you pick. 
 	* Try to look identify of the historians decisions and are within a context. ==Make sure you do not imagine biases though==. 
 	* Connected history: Re-adjust your relation to the object. 

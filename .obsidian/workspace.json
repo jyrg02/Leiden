@@ -13,32 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Admin/Reading.md",
+                "file": "Comparing and Connecting/Final/Readings/moll-murataMerchantCraftGuilds2018.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reading"
-            }
-          },
-          {
-            "id": "6014ced2f1ee944d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Comparing and Connecting/Final/Final (Comparing).md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Final (Comparing)"
+              "title": "moll-murataMerchantCraftGuilds2018"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +94,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Comparing and Connecting/Final/Final (Comparing).md",
+                "file": "Comparing and Connecting/Final/Readings/moll-murataMerchantCraftGuilds2018.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -138,7 +122,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Final (Comparing)"
+              "title": "Graph of moll-murataMerchantCraftGuilds2018"
             }
           }
         ]
@@ -169,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Comparing and Connecting/Final/Final (Comparing).md",
+                "file": "Comparing and Connecting/Final/Readings/moll-murataMerchantCraftGuilds2018.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +163,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Final (Comparing)"
+              "title": "Backlinks for moll-murataMerchantCraftGuilds2018"
             }
           },
           {
@@ -227,8 +211,8 @@
             "state": {
               "type": "smart-connections-view",
               "state": {},
-              "icon": "smart-connections",
-              "title": "Smart Connections"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -237,20 +221,21 @@
             "state": {
               "type": "smart-connections-chat-view",
               "state": {},
-              "icon": "message-square",
-              "title": "Smart Chat Conversation View"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
@@ -260,19 +245,32 @@
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "6014ced2f1ee944d",
+  "active": "da113389e506f49c",
   "lastOpenFiles": [
-    "Comparing and Connecting/Final/~WRL3558.tmp",
-    "Comparing and Connecting/Final/~WRD3543.tmp",
-    "Comparing and Connecting/Final/~WRD2587.tmp",
-    "Comparing and Connecting/Final/~WRL0005.tmp",
-    "Comparing and Connecting/Final/~WRD0004.tmp",
-    "Comparing and Connecting/Final/~WRL0003.tmp",
-    "Comparing and Connecting/Final/~WRD0002.tmp",
-    "Comparing and Connecting/Final/~WRL0001.tmp",
-    "Comparing and Connecting/Final/~WRD0000.tmp",
-    "Comparing and Connecting/Final/~$mparing Final.docx",
-    "Comparing and Connecting/Final/Wage labor & guilds in medieval - Epstein, Steven, 1952-.pdf",
+    "Comparing and Connecting/Final/~$Roig-s2764709-5774LME05W-Final.docx",
+    "Comparing and Connecting/Final/~WRL0919.tmp",
+    "Comparing and Connecting/Final/~WRD0903.tmp",
+    "Comparing and Connecting/Final/JYRoig-s2764709-5774LME05W-Final.docx",
+    "Comparing and Connecting/Final/~WRL0884.tmp",
+    "Comparing and Connecting/Final/~WRD0865.tmp",
+    "Comparing and Connecting/Final/~WRL1379.tmp",
+    "Comparing and Connecting/Final/~WRD1363.tmp",
+    "Comparing and Connecting/Final/~WRL0891.tmp",
+    "Comparing and Connecting/Final/~WRD0860.tmp",
+    "Comparing and Connecting/Final/~WRL3812.tmp",
+    "Comparing and Connecting/Final/Readings/ogilvieEconomicsGuilds2014.md",
+    "Comparing and Connecting/Final/Readings/richardsonCraftGuildsChristianity2005.md",
+    "Comparing and Connecting/Final/Readings/lucassenReturnGuildsGlobal2008.md",
+    "Comparing and Connecting/Final/Readings/liuChineseMerchantGuilds1988.md",
+    "Comparing and Connecting/Readings/Week 3/Seminar 3 (Comparing).md",
+    "Comparing and Connecting/Final/Readings/Guilds.md",
+    "Possible new Specializations.png",
+    "Comparing and Connecting/Final/Readings/moll-murataMerchantCraftGuilds2018.md",
+    "Comparing and Connecting/Final/lucassenReturnGuildsGlobal2008 1.md",
+    "Admin/Reading.md",
+    "Admin/Thesis Planning.md",
+    "Admin/CWCapacityPermaReward.webp",
+    "Comparing and Connecting/Final/Final (Comparing).md",
     "PCNI/Readings/Week 3/colleyGunShipPen2021.md",
     "PCNI/Readings/Week 3/Linda Colley Timeline.md",
     "vaughanCulture2011.md",
@@ -282,8 +280,6 @@
     "hobsbawmPoliticalShoemakers1980.md",
     "Semester 1.md",
     "Comparing and Connecting/Assignments/Laundry List.md",
-    "Admin/CWCapacityPermaReward.webp",
-    "Admin/Reading.md",
     "Admin/CyberpunkV1BlackYellow_c7f094c7-ae70-48cf-b456-80dae21e720a.jpg",
     "Admin/CyberpunkV1Black_a4f9c5aa-2d2f-494b-9633-fb04c405995a.jpg",
     "Admin/tablet-with-blue-display-that-says-cyberpunk-it_492154-12670.avif",
@@ -295,19 +291,8 @@
     "Thesis/Törnquist-Plewa.md",
     "Thesis/To read (THESIS).md",
     "Thesis/Poland Museum/suszkiewiczRiseRighteousNations2016.md",
-    "Thesis/Poland Museum/Possible Plan.md",
-    "Thesis/feindtEntangledMemoryThird2014.md",
-    "Admin/Academics.md",
-    "Thesis/Poland Museum/clarkePolishCulturalDiplomacy2020.md",
-    "Thesis/Poland Museum/casteelHistoricizingNationTransnational2011.md",
-    "Thesis/Poland Museum/machcewiczWarThatNever2021.md",
-    "Thesis/Poland Museum/hojaEngagedNarrativePermanent2020.md",
-    "Thesis/Poland Museum/hewittPolandsNewWorld2018.md",
-    "Thesis/Poland Museum/wassermannEuropeanizationHolocaustWorld2019.md",
-    "Thesis/Poland Museum/Museum of the Second World War in Gdańsk (MIIWS).md",
     "Pasted image 20241022142326.png",
     "Media/Pasted image 20240918122626.png",
-    "Media/PCNI - Types of Comparisons (Comparative History).png",
     "Media/PCNI - Types of Comparisons (Comparative History).canvas"
   ]
 }

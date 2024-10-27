@@ -2750,6 +2750,14 @@ var require_anthropic2 = __commonJS({
     async function fetch_anthropic_models() {
       return [
         {
+          key: "claude-3-5-sonnet-latest",
+          "model_name": "claude-3.5-sonnet-latest",
+          "description": "Anthropic's Claude Sonnet (Latest)",
+          "max_input_tokens": 2e5,
+          "max_output_tokens": 4e3,
+          "multimodal": true
+        },
+        {
           "key": "claude-3-opus-20240229",
           "model_name": "claude-3-opus-20240229",
           "description": "Anthropic's Claude Opus",
@@ -2758,17 +2766,25 @@ var require_anthropic2 = __commonJS({
           "multimodal": true
         },
         {
-          key: "claude-3-5-sonnet-20240620",
-          "model_name": "claude-3.5-sonnet-20240620",
-          "description": "Anthropic's Claude Sonnet",
+          key: "claude-3-haiku-20240307",
+          "model_name": "claude-3-haiku-20240307",
+          "description": "Anthropic's Claude Haiku (2024-03-07)",
           "max_input_tokens": 2e5,
           "max_output_tokens": 4e3,
           "multimodal": true
         },
         {
-          key: "claude-3-haiku-20240307",
-          "model_name": "claude-3-haiku-20240307",
-          "description": "Anthropic's Claude Haiku",
+          key: "claude-3-5-sonnet-20241022",
+          "model_name": "claude-3.5-sonnet-20241022",
+          "description": "Anthropic's Claude Sonnet (2024-10-22)",
+          "max_input_tokens": 2e5,
+          "max_output_tokens": 4e3,
+          "multimodal": true
+        },
+        {
+          key: "claude-3-5-sonnet-20240620",
+          "model_name": "claude-3.5-sonnet-20240620",
+          "description": "Anthropic's Claude Sonnet (2024-06-20)",
           "max_input_tokens": 2e5,
           "max_output_tokens": 4e3,
           "multimodal": true
@@ -5459,7 +5475,6 @@ var SmartEnv = class _SmartEnv {
     const main = this[main_key];
     await this.init_collections(main_env_opts);
     await this.ready_to_load_collections(main);
-    console.log("ready to load collections");
     const main_collections = Object.keys(main_env_opts.collections).reduce((acc, key) => {
       if (!this.collections[key]) return acc;
       acc[key] = this[key];
@@ -5501,7 +5516,6 @@ var SmartEnv = class _SmartEnv {
         }
       } else {
         if (this.opts[key] !== void 0) {
-          console.warn(`SmartEnv: Overwriting existing property ${key} with ${this.mains[this.mains.length - 1]} smart_env_config`);
         }
         this.opts[key] = value;
       }
@@ -5685,7 +5699,7 @@ var SmartEnv = class _SmartEnv {
    */
   async load_settings() {
     if (!await this.data_fs.exists("smart_env.json")) await this.save_settings({});
-    let settings = this.opts.default_settings || {};
+    let settings = JSON.parse(JSON.stringify(this.opts.default_settings || {}));
     deep_merge(settings, JSON.parse(await this.data_fs.read("smart_env.json")));
     deep_merge(settings, this.opts?.smart_env_settings || {});
     this._saved = true;
@@ -5822,7 +5836,7 @@ var CollectionItem = class _CollectionItem {
     this.env = env;
     this.config = this.env?.config;
     this.merge_defaults();
-    if (data) this.data = data;
+    if (data) deep_merge2(this.data, data);
     if (!this.data.class_name) this.data.class_name = this.constructor.name;
   }
   static load(env, data) {
@@ -6064,10 +6078,10 @@ async function render2(scope, opts = {}) {
     return "";
   }).join("\n");
   const frag = this.create_doc_fragment(html);
-  await this.render_setting_components(frag, { scope });
   return await post_process2.call(this, scope, frag, opts);
 }
 async function post_process2(scope, frag, opts = {}) {
+  await this.render_setting_components(frag, { scope });
   return frag;
 }
 
@@ -6437,6 +6451,7 @@ var Collection = class {
     const frag = await this.render_settings_component(this, opts);
     container.innerHTML = "";
     container.appendChild(frag);
+    this.smart_view.on_open_overlay(container);
     return container;
   }
   unload() {
@@ -6713,6 +6728,7 @@ var SmartEntities = class extends Collection {
   }
   async load_smart_embed() {
     if (this.embed_model_key === "None") return;
+    if (!this.embed_model) return;
     if (this.embed_model.loading) return console.log(`SmartEmbedModel already loading for ${this.embed_model_key}`);
     if (this.embed_model.loaded) return console.log(`SmartEmbedModel already loaded for ${this.embed_model_key}`);
     try {
@@ -6761,7 +6777,8 @@ var SmartEntities = class extends Collection {
     return this.embed_model;
   }
   get embed_model() {
-    if (!this._embed_model) this._embed_model = new this.env.opts.modules.smart_embed_model.class(this.env, {
+    if (this.embed_model_key === "None") return null;
+    if (!this._embed_model && this.env.opts.modules.smart_embed_model?.class) this._embed_model = new this.env.opts.modules.smart_embed_model.class(this.env, {
       model_key: this.embed_model_key,
       ...this.settings.embed_model?.[this.embed_model_key] || {},
       settings: this.settings.embed_model
@@ -6792,10 +6809,7 @@ var SmartEntities = class extends Collection {
     return Array.from(nearest.results);
   }
   get file_name() {
-    return this.collection_key + "-" + this.smart_embed_model_key.split("/").pop();
-  }
-  get smart_embed_model_key() {
-    return this.env.settings?.[this.collection_key]?.embed_model || this.env.settings?.[this.collection_key + "_embed_model"] || "None";
+    return this.collection_key + "-" + this.embed_model_key.split("/").pop();
   }
   // get data_dir() { return this.env.env_data_dir + "/" + this.embed_model_key.replace("/", "_"); }
   /**
@@ -7476,7 +7490,7 @@ var SmartSources = class extends SmartEntities {
     this.notices?.show("done initial scan", "Initial scan complete", { timeout: 3e3 });
   }
   init_file_path(file_path) {
-    this.items[file_path] = new this.item_type(this.env, { path: file_path });
+    return this.items[file_path] = new this.item_type(this.env, { path: file_path });
   }
   // removes old data files
   async prune() {
@@ -7599,9 +7613,9 @@ ${remove_smart_blocks.map((item) => `${item.reason} - ${item.key}`).join("\n")}`
       results = [
         ...results,
         ...await this.block_collection.lookup(params)
-      ].sort(sort_by_score).slice(0, limit);
+      ].sort(sort_by_score);
     }
-    return results;
+    return results.slice(0, limit);
   }
   async import_file(file) {
     this.fs.files[file.path] = file;
@@ -7713,47 +7727,41 @@ ${remove_smart_blocks.map((item) => `${item.reason} - ${item.key}`).join("\n")}`
   async run_load() {
     await super.run_load();
     this.blocks.render_settings();
+    this.render_settings();
   }
   async run_import() {
     const start_time = Date.now();
+    Object.values(this.items).forEach((item) => {
+      if (item.meta_changed) item.queue_import();
+    });
     await this.process_import_queue();
     const end_time = Date.now();
     console.log(`Time spent importing: ${end_time - start_time}ms`);
     this.render_settings();
     this.blocks.render_settings();
   }
-  async run_refresh() {
+  async run_prune() {
     await this.prune();
     await this.process_save_queue();
-    this.items = {};
-    this.block_collection.items = {};
-    await this.init_items();
-    await this.process_load_queue();
-    await this.render_settings();
-    await this.process_import_queue();
-    Object.values(this.block_collection.items).forEach((item) => !item.vec ? item.queue_embed() : null);
-    await this.process_embed_queue();
     this.render_settings();
     this.blocks.render_settings();
   }
-  async run_force_refresh() {
-    console.log("run_force_refresh");
+  async run_clear_all() {
+    this.notices?.show("clearing all", "Clearing all data...", { timeout: 0 });
     this.clear();
     this.block_collection.clear();
-    console.log("cleared");
-    console.log("items " + Object.keys(this.items).length);
-    console.log("blocks " + Object.keys(this.block_collection.items).length);
     this._fs = null;
     await this.fs.init();
     await this.init_items();
     this._excluded_headings = null;
-    console.log("init_items " + Object.keys(this.items).length);
     Object.values(this.items).forEach((item) => {
       item.queue_import();
       item.queue_embed();
       item.loaded_at = Date.now() + 9999999999;
     });
     await this.process_import_queue();
+    this.notices?.remove("clearing all");
+    this.notices?.show("cleared all", "All data cleared and reimported", { timeout: 3e3 });
   }
   get excluded_patterns() {
     return [
@@ -7848,7 +7856,7 @@ var SmartBlock = class extends SmartEntity {
   }
   should_clear_embeddings(data) {
     if (this.is_new) return true;
-    if (this.embed_model_key !== "None" && this.vec?.length !== this.embed_model.dims) return true;
+    if (this.embed_model && this.embed_model_key !== "None" && this.vec?.length !== this.embed_model.dims) return true;
     if (this.data.length !== data.length) return true;
     return false;
   }
@@ -7888,7 +7896,8 @@ var SmartBlock = class extends SmartEntity {
   }
   get excluded() {
     const block_headings = this.path.split("#").slice(1);
-    return this.source_collection.excluded_headings.some((heading) => block_headings.includes(heading));
+    if (this.source_collection.excluded_headings.some((heading) => block_headings.includes(heading))) return true;
+    return this.source.excluded;
   }
   get file_path() {
     return this.source.file_path;
@@ -7968,7 +7977,7 @@ var SmartBlock = class extends SmartEntity {
    */
   get should_embed() {
     try {
-      if (this.size < this.source_collection.embed_model.min_chars) return false;
+      if (this.embed_model && this.size < this.embed_model.min_chars) return false;
       const match_line_start = this.line_start + 1;
       const match_line_end = this.line_end;
       const { has_line_start, has_line_end } = Object.entries(this.source?.data?.blocks || {}).reduce((acc, [key, range]) => {
@@ -8020,9 +8029,6 @@ var SmartBlock = class extends SmartEntity {
   }
   get data_file() {
     return this.source.data_file;
-  }
-  get excluded() {
-    return this.source.excluded;
   }
   get excluded_lines() {
     return this.source.excluded_lines;
@@ -8082,24 +8088,29 @@ ${next}
 var SmartBlocks = class extends SmartEntities {
   init() {
   }
-  async create(key, content) {
-    if (!content) content = "-";
-    const source_key = key.split("#")[0];
-    let source = this.source_collection.get(source_key);
-    const headings = key.split("#").slice(1);
-    const content_with_all_headings = [
-      ...headings.map((heading, i) => `${"#".repeat(i + 1)} ${heading}`),
-      ...content.split("\n")
-    ].filter((heading, i, arr) => heading !== arr[i - 1]).join("\n");
-    if (!source) {
-      source = await this.env.smart_sources.create(source_key, content_with_all_headings);
-    } else {
-      await source.update(content_with_all_headings, { mode: "merge_append" });
-    }
-    await source.import();
-    const block = this.get(key);
-    return block;
-  }
+  // remove because markdown-specific
+  // async create(key, content) {
+  //   if(!content) content = "-"; // default to a single dash (prevent block being ignored by parser)
+  //   const source_key = key.split("#")[0];
+  //   let source = this.source_collection.get(source_key);
+  //   const headings = key.split("#").slice(1);
+  //   const content_with_all_headings = [
+  //       ...headings.map((heading, i) => `${"#".repeat(i + 1)} ${heading}`),
+  //       ...content.split("\n")
+  //     ]
+  //     // remove back-to-back duplicates
+  //     .filter((heading, i, arr) => heading !== arr[i-1])
+  //     .join("\n")
+  //   ;
+  //   if(!source) {
+  //     source = await this.env.smart_sources.create(source_key, content_with_all_headings);
+  //   }else{
+  //     await source.update(content_with_all_headings, { mode: 'merge_append' });
+  //   }
+  //   await source.import();
+  //   const block = this.get(key);
+  //   return block;
+  // }
   get embed_model() {
     return this.source_collection?.embed_model;
   }
@@ -8299,6 +8310,7 @@ function markdown_to_blocks(markdown) {
   const heading_lines = {};
   const heading_counts = {};
   const sub_block_counts = {};
+  const subheading_counts = {};
   let current_list_item = null;
   let current_content_block = null;
   let in_frontmatter = false;
@@ -8354,12 +8366,6 @@ function markdown_to_blocks(markdown) {
     if (heading_match && !in_code_block) {
       const level = heading_match[1].length;
       let title = heading_match[2].trim();
-      if (level === 1) {
-        heading_counts[title] = (heading_counts[title] || 0) + 1;
-        if (heading_counts[title] > 1) {
-          title += `[${heading_counts[title]}]`;
-        }
-      }
       while (heading_stack.length > 0 && heading_stack[heading_stack.length - 1].level >= level) {
         const finished_heading = heading_stack.pop();
         if (heading_lines[finished_heading.key][1] === null) {
@@ -8389,6 +8395,21 @@ function markdown_to_blocks(markdown) {
       } else {
         parent_key = "";
         parent_level = 0;
+      }
+      if (heading_stack.length === 0) {
+        heading_counts[title] = (heading_counts[title] || 0) + 1;
+        if (heading_counts[title] > 1) {
+          title += `[${heading_counts[title]}]`;
+        }
+      } else {
+        if (!subheading_counts[parent_key]) {
+          subheading_counts[parent_key] = {};
+        }
+        subheading_counts[parent_key][title] = (subheading_counts[parent_key][title] || 0) + 1;
+        const count = subheading_counts[parent_key][title];
+        if (count > 1) {
+          title += `#{${count}}`;
+        }
       }
       const level_diff = level - parent_level;
       const hashes = "#".repeat(level_diff);
@@ -10186,6 +10207,28 @@ var SmartFsObsidianAdapter = class {
   get fs_path() {
     return this.smart_fs.fs_path;
   }
+  get_file(file_path) {
+    const file = {};
+    file.path = file_path.replace(/\\/g, "/").replace(this.smart_fs.fs_path, "").replace(/^\//, "");
+    file.type = "file";
+    file.extension = file.path.split(".").pop().toLowerCase();
+    file.name = file.path.split("/").pop();
+    file.basename = file.name.split(".").shift();
+    Object.defineProperty(file, "stat", {
+      get: () => {
+        const tfile = this.obsidian_app.vault.getAbstractFileByPath(file_path);
+        if (tfile) {
+          return {
+            ctime: tfile.stat.ctime,
+            mtime: tfile.stat.mtime,
+            size: tfile.stat.size
+          };
+        }
+        return null;
+      }
+    });
+    return file;
+  }
   /**
    * Append content to a file
    * 
@@ -10511,6 +10554,17 @@ ${attributes}
     if (typeof setting_config.conditional === "function" && !setting_config.conditional(scope)) return false;
     return true;
   }
+  /**
+   * Handles the smooth transition effect when opening overlays.
+   * @param {HTMLElement} overlay_container - The overlay container element.
+   */
+  on_open_overlay(overlay_container) {
+    overlay_container.style.transition = "background-color 0.5s ease-in-out";
+    overlay_container.style.backgroundColor = "var(--bold-color)";
+    setTimeout(() => {
+      overlay_container.style.backgroundColor = "";
+    }, 500);
+  }
 };
 function get_by_path(obj, path) {
   if (!path) return "";
@@ -10740,7 +10794,11 @@ var SmartViewAdapter = class {
       text.inputEl.type = "password";
       text.setPlaceholder(elm.dataset.placeholder || "");
       if (value) text.setValue(value);
-      text.onChange(async (value2) => this.handle_on_change(path, value2, elm, scope));
+      let debounceTimer;
+      text.onChange(async (value2) => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => this.handle_on_change(path, value2, elm, scope), 2e3);
+      });
     });
     return smart_setting;
   }
@@ -10752,7 +10810,11 @@ var SmartViewAdapter = class {
       if (typeof value !== "undefined") number.inputEl.value = parseInt(value);
       number.inputEl.min = elm.dataset.min || 0;
       if (elm.dataset.max) number.inputEl.max = elm.dataset.max;
-      number.onChange(async (value2) => this.handle_on_change(path, parseInt(value2), elm, scope));
+      let debounceTimer;
+      number.onChange(async (value2) => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => this.handle_on_change(path, parseInt(value2), elm, scope), 2e3);
+      });
     });
     return smart_setting;
   }
@@ -10773,9 +10835,11 @@ var SmartViewAdapter = class {
     smart_setting.addTextArea((textarea) => {
       textarea.setPlaceholder(elm.dataset.placeholder || "");
       textarea.setValue(value || "");
+      let debounceTimer;
       textarea.onChange(async (value2) => {
-        value2 = value2.split("\n").map((v) => v.trim()).filter((v) => v).join("\n");
-        this.handle_on_change(path, value2, elm, scope);
+        value2 = value2.split("\n").map((v) => v.trim()).filter((v) => v);
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => this.handle_on_change(path, value2, elm, scope), 2e3);
       });
     });
     return smart_setting;
@@ -11157,15 +11221,21 @@ async function post_process5(scope, frag, opts = {}) {
   frag.querySelector(".sources-load-btn")?.addEventListener("click", () => {
     scope.run_load();
   });
-  frag.querySelector(".sources-import-btn")?.addEventListener("click", () => {
-    scope.run_import();
-  });
-  frag.querySelector(".sources-refresh-btn")?.addEventListener("click", () => {
-    scope.run_refresh();
-  });
-  frag.querySelector(".sources-force-refresh-btn")?.addEventListener("click", () => {
-    scope.run_force_refresh();
-  });
+  if (scope.loaded) {
+    frag.querySelector(".sources-import-btn")?.addEventListener("click", () => {
+      scope.run_import();
+    });
+    frag.querySelector(".sources-prune-btn")?.addEventListener("click", () => {
+      scope.run_prune();
+    });
+    frag.querySelector(".sources-clear-all-btn")?.addEventListener("click", async () => {
+      if (confirm("Are you sure you want to clear all data and re-import? This action cannot be undone.")) {
+        await scope.run_clear_all();
+        scope.render_settings();
+        scope.blocks.render_settings();
+      }
+    });
+  }
   return frag;
 }
 function settings_header_html(scope, opts = {}) {
@@ -11216,15 +11286,18 @@ function get_block_heading_html(scope) {
 }
 function get_button_html(scope) {
   if (scope.collection_key !== "smart_sources") return "";
-  const load_btn_html = scope.loaded ? `<button class="sources-load-btn">Re-load Sources</button>` : `<button class="sources-load-btn">Load Sources</button>`;
-  const import_btn_html = scope.loaded ? `<button class="sources-import-btn">Run Import</button>` : "";
-  const refresh_btn_html = scope.loaded ? `<button class="sources-refresh-btn">Refresh All (prune + import)</button>` : "";
-  const force_refresh_btn_html = scope.loaded ? `<button class="sources-force-refresh-btn">Force Refresh All (clear all + import)</button>` : "";
+  const load_btn_html = `<button class="sources-load-btn">${scope.loaded ? "Re-load" : "Load"} Sources</button>`;
+  let additional_buttons = "";
+  if (scope.loaded) {
+    additional_buttons = `
+      <button class="sources-import-btn">Import</button>
+      <button class="sources-prune-btn">Prune</button>
+      <button class="sources-clear-all-btn">Clear All &amp; Re-import</button>
+    `;
+  }
   return `
     ${load_btn_html}
-    ${import_btn_html}
-    ${refresh_btn_html}
-    ${force_refresh_btn_html}
+    ${additional_buttons}
   `;
 }
 
@@ -11254,6 +11327,306 @@ async function render6(scope, opts = {}) {
   `;
   const frag = this.create_doc_fragment(html);
   return await post_process.call(this, scope, frag, opts);
+}
+
+// src/components/result.js
+async function build_html2(scope, opts = {}) {
+  const item = scope.item;
+  const score = scope.score;
+  const expanded_view = item.env.settings.expanded_view;
+  return `<div class="temp-container">
+    <div
+      class="search-result${expanded_view ? "" : " sc-collapsed"}"
+      data-path="${item.path.replace(/"/g, "&quot;")}"
+      data-link="${item.link?.replace(/"/g, "&quot;") || ""}"
+      data-collection="${item.collection_key}"
+      data-score="${score}"
+      draggable="true"
+    >
+      <span class="header">
+        ${this.get_icon_html("right-triangle")}
+        <a class="search-result-file-title" href="#" title="${item.path.replace(/"/g, "&quot;")}" draggable="true">
+          <small>${[score?.toFixed(2), item.name].join(" | ")}</small>
+        </a>
+      </span>
+      <ul draggable="true">
+        <li class="search-result-file-title" title="${item.path.replace(/"/g, "&quot;")}" data-collection="${item.collection_key}" data-key="${item.key}"></li>
+      </ul>
+    </div>
+  </div>`;
+}
+async function render7(scope, opts = {}) {
+  let html = await build_html2.call(this, scope, opts);
+  const frag = this.create_doc_fragment(html);
+  return await post_process6.call(this, scope, frag, opts);
+}
+async function post_process6(scope, frag, opts = {}) {
+  const search_result = frag.querySelector(".search-result");
+  if (typeof opts.add_result_listeners === "function") opts.add_result_listeners(search_result);
+  if (!scope.item.env.settings.expanded_view) return search_result;
+  const li = search_result.querySelector("li");
+  const collection_key = li.dataset.collection;
+  const entity_key = li.dataset.key;
+  const entity = scope.item.env[collection_key].get(entity_key);
+  if (entity) {
+    await entity.render_item(li, opts);
+  } else {
+    li.innerHTML = "<p>Entity not found.</p>";
+  }
+  return search_result;
+}
+
+// src/components/results.js
+async function build_html3(scope, opts = {}) {
+  return ``;
+}
+async function render8(scope, opts = {}) {
+  const html = await build_html3.call(this, scope, opts);
+  const frag = this.create_doc_fragment(html);
+  const results = opts.results || [];
+  const result_frags = await Promise.all(results.map((result) => {
+    return render7.call(this, result, { ...opts });
+  }));
+  result_frags.forEach((result_frag) => frag.appendChild(result_frag));
+  return frag;
+}
+
+// src/components/smart_view_filter.js
+async function render9(scope) {
+  const cohere_api_key_html = `
+    <div class="setting-component"
+      data-name="Cohere API Key"
+      data-type="text"
+      data-setting="smart_view_filter.cohere_api_key"
+      data-description="API Key required to use Cohere re-ranker."
+      data-placeholder="Enter an API Key"
+      data-button="Save"
+    ></div>
+  `;
+  const early_access_html = !scope.EARLY_ACCESS ? "" : `
+    <div class="setting-component"
+      data-name="Toggle Re-Ranker"
+      data-setting="smart_view_filter.re_rank"
+      data-description="Toggle the re-ranker"
+      data-type="toggle"
+      data-default="false"
+      data-value="false"
+      data-callback="refresh_smart_view_filter"
+    ></div>
+    ${scope.settings.smart_view_filter?.re_rank ? cohere_api_key_html : ""}
+  `;
+  const html = `
+    <!-- toggle re-ranker -->
+    ${early_access_html}
+    <div class="setting-component"
+      data-name="Show Full Path"
+      data-description="Show full path in view."
+      data-type="toggle"
+      data-setting="show_full_path"
+      data-callback="refresh_smart_view"
+    ></div>
+    <div class="setting-component"
+      data-name="Results Limit"
+      data-setting="smart_view_filter.results_limit"
+      data-description="Limit the number of results."
+      data-type="number"
+      data-default="20"
+      data-callback="refresh_smart_view"
+    ></div>
+    <!-- toggle exclude_inlinks -->
+    <div class="setting-component"
+      data-name="Exclude Inlinks"
+      data-setting="smart_view_filter.exclude_inlinks"
+      data-description="Exclude inlinks"
+      data-type="toggle"
+      data-default="false"
+      data-callback="refresh_smart_view_filter"
+    ></div>
+    <!-- toggle exclude_outlinks -->
+    <div class="setting-component"
+      data-name="Exclude Outlinks"
+      data-setting="smart_view_filter.exclude_outlinks"
+      data-description="Exclude outlinks"
+      data-type="toggle"
+      data-default="false"
+      data-callback="refresh_smart_view_filter"
+    ></div>
+    <!-- include filter -->
+    <div class="setting-component"
+      data-name="Include Filter"
+      data-setting="smart_view_filter.include_filter"
+      data-description="Require that results match this value."
+      data-type="text"
+      data-callback="refresh_smart_view"
+    ></div>
+    <!-- exclude filter -->
+    <div class="setting-component"
+      data-name="Exclude Filter"
+      data-setting="smart_view_filter.exclude_filter"
+      data-description="Exclude results that match this value."
+      data-type="text"
+      data-callback="refresh_smart_view"
+    ></div>
+  `;
+  const frag = this.create_doc_fragment(html);
+  return await post_process7.call(this, scope, frag);
+}
+async function post_process7(scope, frag) {
+  await this.render_setting_components(frag, { scope });
+  return frag;
+}
+
+// src/components/connections.js
+async function build_html4(scope, opts = {}) {
+  const context_name = scope.path.split("/").pop();
+  const html = `<div class="sc-connections-view">
+    <div class="sc-top-bar">
+      <p class="sc-context" data-key="${scope.path}">
+        ${scope.env.smart_sources.keys.length} (${scope.env.smart_blocks.keys.length})
+      </p>
+      <button class="sc-refresh">${this.get_icon_html("refresh-cw")}</button>
+      <button class="sc-fold-toggle">${this.get_icon_html(scope.env.settings.expanded_view ? "fold-vertical" : "unfold-vertical")}</button>
+      <button class="sc-filter">${this.get_icon_html("sliders-horizontal")}</button>
+      <button class="sc-search">${this.get_icon_html("search")}</button>
+    </div>
+    <div id="settings" class="sc-overlay"></div>
+    <div class="sc-list">
+    </div>
+    <div class="sc-bottom-bar">
+      <span class="sc-context" data-key="${scope.path}" title="${scope.path}">
+        ${context_name}${opts.re_ranked ? " (re-ranked)" : ""}
+      </span>
+      ${opts.attribution || ""}
+    </div>
+  </div>`;
+  return html;
+}
+async function render10(scope, opts = {}) {
+  let html = await build_html4.call(this, scope, opts);
+  const frag = this.create_doc_fragment(html);
+  const results = scope.find_connections(opts);
+  const sc_list = frag.querySelector(".sc-list");
+  const results_frag = await render8.call(this, scope, { ...opts, results });
+  Array.from(results_frag.children).forEach((elm) => sc_list.appendChild(elm));
+  return await post_process8.call(this, scope, frag, opts);
+}
+async function post_process8(scope, frag, opts = {}) {
+  const container = frag.querySelector(".sc-list");
+  const overlay_container = frag.querySelector(".sc-overlay");
+  const render_filter_settings = async () => {
+    if (!overlay_container) throw new Error("Container is required");
+    overlay_container.innerHTML = "";
+    const filter_frag = await render9.call(this, {
+      settings: scope.env.settings,
+      refresh_smart_view: opts.refresh_smart_view,
+      refresh_smart_view_filter: render_filter_settings.bind(this)
+    });
+    overlay_container.innerHTML = "";
+    overlay_container.appendChild(filter_frag);
+    this.on_open_overlay(overlay_container);
+  };
+  const toggle_button = frag.querySelector(".sc-fold-toggle");
+  toggle_button.addEventListener("click", () => {
+    const expanded = scope.env.settings.expanded_view;
+    container.querySelectorAll(".search-result").forEach((elm) => {
+      if (expanded) {
+        elm.classList.add("sc-collapsed");
+      } else {
+        elm.classList.remove("sc-collapsed");
+        const collection_key = elm.dataset.collection;
+        const entity = scope.env[collection_key].get(elm.dataset.path);
+        entity.render_item(elm.querySelector("li"));
+      }
+    });
+    scope.env.settings.expanded_view = !expanded;
+    toggle_button.innerHTML = this.get_icon_html(scope.env.settings.expanded_view ? "fold-vertical" : "unfold-vertical");
+    toggle_button.setAttribute("aria-label", scope.env.settings.expanded_view ? "Fold all" : "Unfold all");
+  });
+  const filter_button = frag.querySelector(".sc-filter");
+  filter_button.addEventListener("click", () => {
+    render_filter_settings();
+  });
+  const refresh_button = frag.querySelector(".sc-refresh");
+  refresh_button.addEventListener("click", () => {
+    opts.refresh_smart_view();
+  });
+  const search_button = frag.querySelector(".sc-search");
+  search_button.addEventListener("click", () => {
+    opts.open_search_view();
+  });
+  return frag;
+}
+
+// src/components/search.js
+async function build_html5(scope, opts = {}) {
+  return `<div id="sc-search-view">
+    <div class="sc-top-bar">
+      <button class="sc-fold-toggle">${this.get_icon_html(scope.settings.expanded_view ? "fold-vertical" : "unfold-vertical")}</button>
+      <button class="sc-search">${this.get_icon_html("search")}</button>
+    </div>
+    <div class="sc-search-container">
+      <h2>Search Smart Connections</h2>
+      <div class="sc-search-input">
+        <textarea
+          id="query"
+          name="query"
+          placeholder="Describe what you're looking for (e.g., 'PKM strategies', 'story elements', 'personal AI alignment')"
+        ></textarea>
+        <button id="search">${this.get_icon_html("search")}</button>
+      </div>
+      <p>Use semantic (embeddings) search to surface relevant notes. Results are sorted by similarity to your query. Note: returns different results than lexical (keyword) search.</p>
+    </div>
+    <div class="sc-list">
+    </div>
+    <div class="sc-bottom-bar">
+      ${opts.attribution || ""}
+    </div>
+  </div>`;
+}
+async function render11(scope, opts = {}) {
+  let html = await build_html5.call(this, scope, opts);
+  const frag = this.create_doc_fragment(html);
+  return await post_process9.call(this, scope, frag, opts);
+}
+async function post_process9(scope, frag, opts = {}) {
+  const query_input = frag.querySelector("#query");
+  const results_container = frag.querySelector(".sc-list");
+  const render_search = async (search_text, results_container2) => {
+    const results = await scope[opts.collection_key].lookup({ hypotheticals: [search_text] });
+    results_container2.innerHTML = "";
+    const results_frag = await render8.call(this, scope, { ...opts, results });
+    Array.from(results_frag.children).forEach((elm) => results_container2.appendChild(elm));
+  };
+  if (opts.search_text) {
+    query_input.value = opts.search_text;
+    await render_search(opts.search_text, results_container);
+  }
+  const search_button = frag.querySelector("#search");
+  search_button.addEventListener("click", async (event) => {
+    const container = event.target.closest("#sc-search-view");
+    const search_text = query_input.value.trim();
+    if (search_text) {
+      await render_search(search_text, results_container);
+    }
+  });
+  const fold_toggle = frag.querySelector(".sc-fold-toggle");
+  fold_toggle.addEventListener("click", (event) => {
+    const container = event.target.closest("#sc-search-view");
+    const expanded = scope.settings.expanded_view;
+    container.querySelectorAll(".search-result").forEach((elm) => {
+      if (expanded) {
+        elm.classList.add("sc-collapsed");
+      } else {
+        elm.classList.remove("sc-collapsed");
+        const collection_key = elm.dataset.collection;
+        const entity = scope[collection_key].get(elm.dataset.path);
+        entity.render_item(elm.querySelector("li"));
+      }
+    });
+    scope.settings.expanded_view = !expanded;
+    fold_toggle.innerHTML = this.get_icon_html(scope.settings.expanded_view ? "fold-vertical" : "unfold-vertical");
+  });
+  return frag;
 }
 
 // src/smart_env.config.js
@@ -11318,7 +11691,9 @@ var smart_env_config = {
     }
   },
   components: {
-    settings: render6
+    settings: render6,
+    connections: render10,
+    search: render11
   },
   default_settings: {
     is_obsidian_vault: true,
@@ -11710,261 +12085,9 @@ var SmartObsidianView2 = class extends import_obsidian6.ItemView {
 // src/smart_entities_view.js
 var SmartEntitiesView = class extends SmartObsidianView2 {
   add_result_listeners(elm) {
-    elm.addEventListener("click", this.handle_result_click.bind(this));
-    const path = elm.querySelector("li").dataset.key;
-    elm.addEventListener("dragstart", (event) => {
-      const drag_manager = this.app.dragManager;
-      const file_path = path.split("#")[0];
-      const file = this.app.metadataCache.getFirstLinkpathDest(file_path, "");
-      const drag_data = drag_manager.dragFile(event, file);
-      drag_manager.onDragStart(event, drag_data);
-    });
-    if (path.indexOf("{") === -1) {
-      elm.addEventListener("mouseover", (event) => {
-        this.app.workspace.trigger("hover-link", {
-          event,
-          source: this.constructor.view_type,
-          hoverParent: elm.parentElement,
-          targetEl: elm,
-          linktext: path
-        });
-      });
-    }
-  }
-  handle_result_click(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    const target = event.target;
-    const result = target.closest(".search-result");
-    if (target.classList.contains("svg-icon")) {
-      this.toggle_result(result);
-      return;
-    }
-    const link = result.dataset.link || result.dataset.path;
-    if (result.classList.contains("sc-collapsed")) {
-      if (this.plugin.obsidian.Keymap.isModEvent(event)) {
-        console.log("open_note", link);
-        this.plugin.open_note(link, event);
-      } else {
-        this.toggle_result(result);
-      }
-    } else {
-      console.log("open_note", link);
-      this.plugin.open_note(link, event);
-    }
-  }
-  async toggle_result(result) {
-    result.classList.toggle("sc-collapsed");
-    if (!result.querySelector("li").innerHTML) {
-      const collection_key = result.dataset.collection;
-      const entity = this.env[collection_key].get(result.dataset.path);
-      await entity.render_item(result.querySelector("li"));
-    }
+    this.plugin.add_result_listeners(elm, this.constructor.view_type);
   }
 };
-
-// src/components/result.js
-async function build_html2(scope, opts = {}) {
-  const item = scope.item;
-  const score = scope.score;
-  const expanded_view = item.env.settings.expanded_view;
-  return `<div class="temp-container">
-    <div
-      class="search-result${expanded_view ? "" : " sc-collapsed"}"
-      data-path="${item.path.replace(/"/g, "&quot;")}"
-      data-link="${item.link?.replace(/"/g, "&quot;") || ""}"
-      data-collection="${item.collection_key}"
-      data-score="${score}"
-      draggable="true"
-    >
-      <span class="header">
-        ${this.get_icon_html("right-triangle")}
-        <a class="search-result-file-title" href="#" title="${item.path.replace(/"/g, "&quot;")}" draggable="true">
-          <small>${[score?.toFixed(2), item.name].join(" | ")}</small>
-        </a>
-      </span>
-      <ul draggable="true">
-        <li class="search-result-file-title" title="${item.path.replace(/"/g, "&quot;")}" data-collection="${item.collection_key}" data-key="${item.key}"></li>
-      </ul>
-    </div>
-  </div>`;
-}
-async function render7(scope, opts = {}) {
-  let html = await build_html2.call(this, scope, opts);
-  const frag = this.create_doc_fragment(html);
-  return await post_process6.call(this, scope, frag, opts);
-}
-async function post_process6(scope, frag, opts = {}) {
-  const search_result = frag.querySelector(".search-result");
-  if (typeof opts.add_result_listeners === "function") opts.add_result_listeners(search_result);
-  if (!scope.item.env.settings.expanded_view) return search_result;
-  const li = search_result.querySelector("li");
-  const collection_key = li.dataset.collection;
-  const entity_key = li.dataset.key;
-  const entity = scope.item.env[collection_key].get(entity_key);
-  if (entity) {
-    await entity.render_item(li, opts);
-  } else {
-    li.innerHTML = "<p>Entity not found.</p>";
-  }
-  return search_result;
-}
-
-// src/components/results.js
-async function build_html3(scope, opts = {}) {
-  return ``;
-}
-async function render8(scope, opts = {}) {
-  const html = await build_html3.call(this, scope, opts);
-  const frag = this.create_doc_fragment(html);
-  const results = opts.results || [];
-  const result_frags = await Promise.all(results.map((result) => {
-    return render7.call(this, result, { ...opts });
-  }));
-  result_frags.forEach((result_frag) => frag.appendChild(result_frag));
-  return frag;
-}
-
-// src/components/connections.js
-async function build_html4(scope, opts = {}) {
-  const context_name = scope.path.split("/").pop();
-  const html = `<div class="sc-connections-view">
-    <div class="sc-top-bar">
-      <p class="sc-context" data-key="${scope.path}">
-        ${scope.env.smart_sources.keys.length} (${scope.env.smart_blocks.keys.length})
-      </p>
-      <button class="sc-refresh">${this.get_icon_html("refresh-cw")}</button>
-      <button class="sc-fold-toggle">${this.get_icon_html(scope.env.settings.expanded_view ? "fold-vertical" : "unfold-vertical")}</button>
-      <button class="sc-filter">${this.get_icon_html("sliders-horizontal")}</button>
-      <button class="sc-search">${this.get_icon_html("search")}</button>
-    </div>
-    <div id="settings" class="sc-overlay"></div>
-    <div class="sc-list">
-    </div>
-    <div class="sc-bottom-bar">
-      <span class="sc-context" data-key="${scope.path}" title="${scope.path}">
-        ${context_name}${opts.re_ranked ? " (re-ranked)" : ""}
-      </span>
-      ${opts.attribution || ""}
-    </div>
-  </div>`;
-  return html;
-}
-async function render9(scope, opts = {}) {
-  let html = await build_html4.call(this, scope, opts);
-  const frag = this.create_doc_fragment(html);
-  const results = scope.find_connections(opts);
-  const sc_list = frag.querySelector(".sc-list");
-  const results_frag = await render8.call(this, scope, { ...opts, results });
-  Array.from(results_frag.children).forEach((elm) => sc_list.appendChild(elm));
-  return await post_process7.call(this, scope, frag, opts);
-}
-async function post_process7(scope, frag, opts = {}) {
-  const container = frag.querySelector(".sc-list");
-  const toggle_button = frag.querySelector(".sc-fold-toggle");
-  toggle_button.addEventListener("click", () => {
-    const expanded = scope.env.settings.expanded_view;
-    container.querySelectorAll(".search-result").forEach((elm) => {
-      if (expanded) {
-        elm.classList.add("sc-collapsed");
-      } else {
-        elm.classList.remove("sc-collapsed");
-        const collection_key = elm.dataset.collection;
-        const entity = scope.env[collection_key].get(elm.dataset.path);
-        entity.render_item(elm.querySelector("li"));
-      }
-    });
-    scope.env.settings.expanded_view = !expanded;
-    toggle_button.innerHTML = this.get_icon_html(scope.env.settings.expanded_view ? "fold-vertical" : "unfold-vertical");
-    toggle_button.setAttribute("aria-label", scope.env.settings.expanded_view ? "Fold all" : "Unfold all");
-  });
-  return frag;
-}
-
-// src/components/smart_view_filter.js
-async function render10(scope) {
-  const cohere_api_key_html = `
-    <div class="setting-component"
-      data-name="Cohere API Key"
-      data-type="text"
-      data-setting="smart_view_filter.cohere_api_key"
-      data-description="API Key required to use Cohere re-ranker."
-      data-placeholder="Enter an API Key"
-      data-button="Save"
-    ></div>
-  `;
-  const early_access_html = !scope.EARLY_ACCESS ? "" : `
-    <div class="setting-component"
-      data-name="Toggle Re-Ranker"
-      data-setting="smart_view_filter.re_rank"
-      data-description="Toggle the re-ranker"
-      data-type="toggle"
-      data-default="false"
-      data-value="false"
-      data-callback="refresh_smart_view_filter"
-    ></div>
-    ${scope.settings.smart_view_filter?.re_rank ? cohere_api_key_html : ""}
-  `;
-  const html = `
-    <!-- toggle re-ranker -->
-    ${early_access_html}
-    <div class="setting-component"
-      data-name="Show Full Path"
-      data-description="Show full path in view."
-      data-type="toggle"
-      data-setting="show_full_path"
-      data-callback="refresh_smart_view"
-    ></div>
-    <div class="setting-component"
-      data-name="Results Limit"
-      data-setting="smart_view_filter.results_limit"
-      data-description="Limit the number of results."
-      data-type="number"
-      data-default="20"
-      data-callback="refresh_smart_view"
-    ></div>
-    <!-- toggle exclude_inlinks -->
-    <div class="setting-component"
-      data-name="Exclude Inlinks"
-      data-setting="smart_view_filter.exclude_inlinks"
-      data-description="Exclude inlinks"
-      data-type="toggle"
-      data-default="false"
-      data-callback="refresh_smart_view_filter"
-    ></div>
-    <!-- toggle exclude_outlinks -->
-    <div class="setting-component"
-      data-name="Exclude Outlinks"
-      data-setting="smart_view_filter.exclude_outlinks"
-      data-description="Exclude outlinks"
-      data-type="toggle"
-      data-default="false"
-      data-callback="refresh_smart_view_filter"
-    ></div>
-    <!-- include filter -->
-    <div class="setting-component"
-      data-name="Include Filter"
-      data-setting="smart_view_filter.include_filter"
-      data-description="Require that results match this value."
-      data-type="text"
-      data-callback="refresh_smart_view"
-    ></div>
-    <!-- exclude filter -->
-    <div class="setting-component"
-      data-name="Exclude Filter"
-      data-setting="smart_view_filter.exclude_filter"
-      data-description="Exclude results that match this value."
-      data-type="text"
-      data-callback="refresh_smart_view"
-    ></div>
-  `;
-  const frag = this.create_doc_fragment(html);
-  return await post_process8.call(this, scope, frag);
-}
-async function post_process8(scope, frag) {
-  await this.render_setting_components(frag, { scope });
-  return frag;
-}
 
 // src/sc_connections_view.js
 var import_obsidian7 = require("obsidian");
@@ -11989,8 +12112,8 @@ var ScConnectionsView = class extends SmartEntitiesView {
       }
     }));
   }
-  async render_view(entity = null) {
-    if (this.container.checkVisibility() === false) return console.log("View inactive, skipping render nearest");
+  async render_view(entity = null, container = this.container) {
+    if (container.checkVisibility() === false) return console.log("View inactive, skipping render nearest");
     if (!entity) {
       const current_file = this.app.workspace.getActiveFile();
       if (current_file) entity = current_file?.path;
@@ -12013,27 +12136,15 @@ var ScConnectionsView = class extends SmartEntitiesView {
     }
     if (this.current_context === entity?.key) return;
     this.current_context = entity?.key;
-    const frag = await render9.call(this.smart_view, entity, {
+    const frag = await this.env.opts.components.connections.call(this.smart_view, entity, {
       add_result_listeners: this.add_result_listeners.bind(this),
-      attribution: this.attribution
-    });
-    this.container.innerHTML = "";
-    this.container.appendChild(frag);
-    this.add_top_bar_listeners();
-  }
-  async render_filter_settings() {
-    const overlay_container = this.container.querySelector(".sc-overlay");
-    if (!overlay_container) throw new Error("Container is required");
-    overlay_container.innerHTML = "";
-    overlay_container.innerHTML = '<div class="sc-loading">Loading filter settings...</div>';
-    const frag = await render10.call(this.smart_view, {
-      settings: this.env.settings,
+      attribution: this.attribution,
       refresh_smart_view: this.refresh_smart_view.bind(this),
-      refresh_smart_view_filter: this.refresh_smart_view_filter.bind(this)
+      open_search_view: this.plugin.open_search_view.bind(this.plugin)
     });
-    overlay_container.innerHTML = "";
-    overlay_container.appendChild(frag);
-    on_open_overlay(overlay_container);
+    container.innerHTML = "";
+    container.appendChild(frag);
+    this.add_top_bar_listeners();
   }
   refresh_smart_view() {
     console.log("refresh_smart_view");
@@ -12041,21 +12152,8 @@ var ScConnectionsView = class extends SmartEntitiesView {
     this.current_context = null;
     this.render_view();
   }
-  refresh_smart_view_filter() {
-    console.log("refresh_smart_view_filter");
-    this.render_filter_settings();
-  }
   add_top_bar_listeners() {
     const container = this.container;
-    container.querySelector(".sc-filter").addEventListener("click", () => {
-      this.render_filter_settings();
-    });
-    container.querySelector(".sc-refresh").addEventListener("click", () => {
-      this.refresh_smart_view();
-    });
-    container.querySelector(".sc-search").addEventListener("click", () => {
-      this.plugin.open_search_view();
-    });
     container.querySelectorAll(".sc-context").forEach((el) => {
       const entity = this.env.smart_sources.get(el.dataset.key);
       if (entity) {
@@ -12066,13 +12164,6 @@ var ScConnectionsView = class extends SmartEntitiesView {
     });
   }
 };
-function on_open_overlay(overlay_container) {
-  overlay_container.style.transition = "background-color 0.5s ease-in-out";
-  overlay_container.style.backgroundColor = "var(--bold-color)";
-  setTimeout(() => {
-    overlay_container.style.backgroundColor = "";
-  }, 500);
-}
 var SmartNoteInspectModal = class extends import_obsidian7.Modal {
   constructor(env, entity) {
     super(env.smart_connections_plugin.app);
@@ -12091,71 +12182,6 @@ var SmartNoteInspectModal = class extends import_obsidian7.Modal {
   }
 };
 
-// src/components/search.js
-async function build_html5(scope, opts = {}) {
-  return `<div id="sc-search-view">
-    <div class="sc-top-bar">
-      <button class="sc-fold-toggle">${this.get_icon_html(scope.settings.expanded_view ? "fold-vertical" : "unfold-vertical")}</button>
-      <button class="sc-search">${this.get_icon_html("search")}</button>
-    </div>
-    <div class="sc-search-container">
-      <h2>Search Smart Connections</h2>
-      <div class="sc-search-input">
-        <textarea
-          id="query"
-          name="query"
-          placeholder="Describe what you're looking for (e.g., 'PKM strategies', 'story elements', 'personal AI alignment')"
-        ></textarea>
-        <button id="search">${this.get_icon_html("search")}</button>
-      </div>
-      <p>Use semantic (embeddings) search to surface relevant notes. Results are sorted by similarity to your query. Note: returns different results than lexical (keyword) search.</p>
-    </div>
-    <div class="sc-list">
-    </div>
-    <div class="sc-bottom-bar">
-      ${opts.attribution || ""}
-    </div>
-  </div>`;
-}
-async function render11(scope, opts = {}) {
-  let html = await build_html5.call(this, scope, opts);
-  const frag = this.create_doc_fragment(html);
-  return await post_process9.call(this, scope, frag, opts);
-}
-async function post_process9(scope, frag, opts = {}) {
-  const query_input = frag.querySelector("#query");
-  const search_button = frag.querySelector("#search");
-  search_button.addEventListener("click", async (event) => {
-    const container = event.target.closest("#sc-search-view");
-    const search_text = query_input.value.trim();
-    if (search_text) {
-      const results = await scope[opts.collection_key].lookup({ hypotheticals: [search_text] });
-      const sc_list = container.querySelector(".sc-list");
-      sc_list.innerHTML = "";
-      const results_frag = await render8.call(this, scope, { ...opts, results });
-      Array.from(results_frag.children).forEach((elm) => sc_list.appendChild(elm));
-    }
-  });
-  const fold_toggle = frag.querySelector(".sc-fold-toggle");
-  fold_toggle.addEventListener("click", (event) => {
-    const container = event.target.closest("#sc-search-view");
-    const expanded = scope.settings.expanded_view;
-    container.querySelectorAll(".search-result").forEach((elm) => {
-      if (expanded) {
-        elm.classList.add("sc-collapsed");
-      } else {
-        elm.classList.remove("sc-collapsed");
-        const collection_key = elm.dataset.collection;
-        const entity = scope[collection_key].get(elm.dataset.path);
-        entity.render_item(elm.querySelector("li"));
-      }
-    });
-    scope.settings.expanded_view = !expanded;
-    fold_toggle.innerHTML = this.get_icon_html(scope.settings.expanded_view ? "fold-vertical" : "unfold-vertical");
-  });
-  return frag;
-}
-
 // src/sc_search_view.js
 var ScSearchView = class extends SmartEntitiesView {
   static get view_type() {
@@ -12167,16 +12193,17 @@ var ScSearchView = class extends SmartEntitiesView {
   static get icon_name() {
     return "search";
   }
-  async render_view() {
-    this.container.innerHTML = "Loading search...";
-    const frag = await render11.call(this.smart_view, this.env, {
+  async render_view(search_text = "", container = this.container) {
+    container.innerHTML = "Loading search...";
+    const frag = await this.env.opts.components.search.call(this.smart_view, this.env, {
       collection_key: "smart_sources",
       // TODO: make it configurable which collection to search
       add_result_listeners: this.add_result_listeners.bind(this),
-      attribution: this.attribution
+      attribution: this.attribution,
+      search_text
     });
-    this.container.innerHTML = "";
-    this.container.appendChild(frag);
+    container.innerHTML = "";
+    container.appendChild(frag);
   }
 };
 
@@ -13116,7 +13143,7 @@ var SmartChatSettings = class extends SmartSettings2 {
 };
 
 // src/on_open_overlay.js
-function on_open_overlay2(container) {
+function on_open_overlay(container) {
   container.style.transition = "background-color 0.5s ease-in-out";
   container.style.backgroundColor = "var(--bold-color)";
   setTimeout(() => {
@@ -13179,7 +13206,7 @@ var ScChatsUI = class extends import_smart_chats_ui.SmartChatsUI {
     this.add_chat_input_listeners();
   }
   on_open_overlay() {
-    on_open_overlay2(this.overlay_container);
+    on_open_overlay(this.overlay_container);
   }
   async message_post_process(msg_elm) {
     await this.render_md_as_html(msg_elm);
@@ -14106,7 +14133,7 @@ var SmartConnectionsPlugin = class extends Plugin {
   init_chat_model(chat_model_platform_key = null) {
     let chat_model_config = {};
     chat_model_platform_key = chat_model_platform_key ?? this.settings.chat_model_platform_key;
-    if (chat_model_platform_key === "open_router" && !this.settings[chat_model_platform_key]?.api_key) chat_model_config.api_key = "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";
+    if (chat_model_platform_key === "open_router" && !this.settings[chat_model_platform_key]?.api_key) chat_model_config.api_key = "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";
     else chat_model_config = this.settings[chat_model_platform_key] ?? {};
     this.env.chat_model = new this.chat_classes.ScChatModel(this.env, chat_model_platform_key, { ...chat_model_config });
     this.env.chat_model._request_adapter = this.obsidian.requestUrl;
@@ -14211,10 +14238,14 @@ var SmartConnectionsPlugin = class extends Plugin {
       editorCallback: async (editor) => {
         const curr_file = this.app.workspace.getActiveFile();
         if (!curr_file?.path) return console.warn("No active file", curr_file);
-        const source = this.env.smart_sources.get(curr_file.path);
-        if (!source) this.notices?.show("note not found", [`Note not found: ${curr_file.path}`]);
-        source.data = { path: curr_file.path };
-        await this.env.data_fs.remove(source.data_path);
+        let source = this.env.smart_sources.get(curr_file.path);
+        if (source) {
+          source.data = { path: curr_file.path };
+          await this.env.data_fs.remove(source.data_path);
+        } else {
+          this.env.smart_sources.fs.include_file(curr_file.path);
+          source = this.env.smart_sources.init_file_path(curr_file.path);
+        }
         await source.import();
         await this.env.smart_sources.process_embed_queue();
         setTimeout(() => {
@@ -14333,7 +14364,37 @@ ${message ? "# " + message + "\n" : ""}${ignore}`);
   }
   // SUPPORTERS
   async render_code_block(contents, container, ctx) {
-    return this.view.render_nearest(contents.trim().length ? contents : ctx.sourcePath, container);
+    let frag;
+    if (contents.trim().length) {
+      frag = await this.env.opts.components.search.call(
+        this.env.smart_view,
+        this.env,
+        {
+          collection_key: "smart_sources",
+          // TODO: make it configurable which collection to search
+          add_result_listeners: this.add_result_listeners.bind(this),
+          attribution: this.attribution,
+          search_text: contents
+        }
+      );
+    } else {
+      const entity = this.env.smart_sources.get(ctx.sourcePath);
+      if (!entity) return container.innerHTML = "Entity not found: " + ctx.sourcePath;
+      frag = await this.env.opts.components.connections.call(
+        this.env.smart_view,
+        entity,
+        {
+          add_result_listeners: this.add_result_listeners.bind(this),
+          attribution: this.attribution,
+          refresh_smart_view: () => {
+            this.render_code_block(contents, container, ctx);
+          },
+          open_search_view: this.open_search_view.bind(this)
+        }
+      );
+    }
+    container.innerHTML = "";
+    container.appendChild(frag);
   }
   async render_code_block_context(results, container, ctx) {
     results = this.get_entities_from_context_codeblock(results);
@@ -14528,6 +14589,60 @@ ${message ? "# " + message + "\n" : ""}${ignore}`);
   // }
   remove_setting_elm(path, value, elm) {
     elm.remove();
+  }
+  // ENTITIES VIEW
+  add_result_listeners(elm, source) {
+    const toggle_result = async (result) => {
+      result.classList.toggle("sc-collapsed");
+      if (!result.querySelector("li").innerHTML) {
+        const collection_key = result.dataset.collection;
+        const entity = this.env[collection_key].get(result.dataset.path);
+        await entity.render_item(result.querySelector("li"));
+      }
+    };
+    const handle_result_click = (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const target = event.target;
+      const result = target.closest(".search-result");
+      if (target.classList.contains("svg-icon")) {
+        toggle_result(result);
+        return;
+      }
+      const link = result.dataset.link || result.dataset.path;
+      if (result.classList.contains("sc-collapsed")) {
+        if (this.obsidian.Keymap.isModEvent(event)) {
+          console.log("open_note", link);
+          this.open_note(link, event);
+        } else {
+          toggle_result(result);
+        }
+      } else {
+        console.log("open_note", link);
+        this.open_note(link, event);
+      }
+    };
+    elm.addEventListener("click", handle_result_click.bind(this));
+    const path = elm.querySelector("li").dataset.key;
+    elm.addEventListener("dragstart", (event) => {
+      const drag_manager = this.app.dragManager;
+      const file_path = path.split("#")[0];
+      const file = this.app.metadataCache.getFirstLinkpathDest(file_path, "");
+      const drag_data = drag_manager.dragFile(event, file);
+      drag_manager.onDragStart(event, drag_data);
+    });
+    if (path.indexOf("{") === -1) {
+      elm.addEventListener("mouseover", (event) => {
+        this.app.workspace.trigger("hover-link", {
+          event,
+          // source: this.constructor.view_type,
+          source,
+          hoverParent: elm.parentElement,
+          targetEl: elm,
+          linktext: path
+        });
+      });
+    }
   }
 };
 
